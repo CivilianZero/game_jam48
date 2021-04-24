@@ -1,26 +1,33 @@
 go.property("dir", vmath.vector3())
 
 function init(self)
-	self.speed = 200
-	self.life = 1
+	self.speed = 20
+	self.max_speed_reached = false
+	self.explosion_timer = 3
 end
 
 local function explode(self)
-	self.life = 1000
 	go.set_rotation(vmath.quat())
-	self.speed = 0
+	msg.post("#collisionobject", "disable")
 	msg.post("#sprite", "play_animation", { id = hash("explosion") })
 end
 
 function update(self, dt)
-	local pos = go.get_position()
-	pos = pos + self.dir * self.speed * dt
-	go.set_position(pos)
-	
-	self.life = self.life - dt
-	if self.life < 0 then
-		explode(self)
+	-- local pos = go.get_position()
+	-- pos = pos + self.dir * self.speed * dt
+	-- go.set_position(pos)
+	if self.speed < 200 and self.max_speed_reached == false then
+		self.speed = self.speed + 5
+	elseif self.speed > -30 then
+		self.max_speed_reached = true
+		self.speed = self.speed - 10
+	else
+		self.explosion_timer = self.explosion_timer - dt
+		if self.explosion_timer < 0 then
+			explode(self)
+		end
 	end
+	msg.post(".", "apply_force", { force = self.dir*self.speed, position=go.get_world_position()})
 end
 
 function on_message(self, message_id, message, sender)

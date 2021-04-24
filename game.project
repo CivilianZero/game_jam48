@@ -23,6 +23,7 @@ input_method = HiddenInputField
 
 [physics]
 scale = 0.02
+gravity_y = 0.0
 
 [graphics]
 default_texture_min_filter = nearest

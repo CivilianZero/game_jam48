@@ -2,6 +2,8 @@ function init(self)
 	msg.post(".", "acquire_input_focus")
 	self.velocity = vmath.vector3()
 	self.input = vmath.vector3()
+	self.max_velocity = 40
+	self.deceleration = vmath.vector3(-10)
 end
 
 function final(self)
@@ -15,17 +17,23 @@ function update(self, dt)
 		self.input = vmath.normalize(self.input)
 	end
 
-	local acceleration = self.input * 200
-
+	local acceleration = self.input * 50
+	
 	local dv = acceleration * dt
 	local v0 = self.velocity
 	local v1 = self.velocity + dv
+	
+	v1.x = math.min(v1.x, 40)
+	v1.y = math.min(v1.y, 40)
+	v1.x = math.max(v1.x, -40)
+	v1.y = math.max(v1.y, -40)
+	
 	local movement = (v0 + v1) * dt * 0.5
 	
 	local p = go.get_position()
 	go.set_position(p + movement)
 
-	self.velocity = v1
+	self.velocity = v1 * 0.99
 	self.input = vmath.vector3() 
 end
 

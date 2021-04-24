@@ -4,7 +4,7 @@ function init(self)
 	self.velocity = vmath.vector3()
 	self.input = vmath.vector3()
 	self.max_velocity = 40
-
+	self.correction = vmath.vector3()
 	self.dir = vmath.vector3(1, 0, 0)
 	self.firing = false
 end
@@ -44,12 +44,24 @@ function update(self, dt)
 	self.velocity = v1 * 0.99
 	self.input = vmath.vector3()
 	self.firing = false
+	self.correction = vmath.vector3()
 end
 
 function on_message(self, message_id, message, sender)
-	-- Add message-handling code here
-	-- Learn more: https://defold.com/manuals/message-passing/
-	-- Remove this function if not needed
+	-- if message_id == hash("collision_response") then
+	-- 	print("collided with "..message.other_id)
+	-- 	print("collided with group "..message.other_group)
+	-- end
+	if message_id == hash("contact_point_response") then
+		if message.distance > 0 then
+			local proj = vmath.project(self.correction, message.normal * message.distance)
+			if proj < 1 then
+				local comp = (message.distance - message.distance * proj) * message.normal
+				go.set_position(go.get_position() + comp)
+				self.correction = self.correction + comp
+			end
+		end
+	end
 end
 
 function on_input(self, action_id, action)
@@ -59,10 +71,10 @@ function on_input(self, action_id, action)
 		self.input.y = -1
 	elseif action_id == hash("left") then
 		self.input.x = -1
-		self.dir = vmath.vector3(-1, 0, 0)
+		self.dir.x = -1
 	elseif action_id == hash("right") then
 		self.input.x = 1
-		self.dir = vmath.vector3(1, 0, 0)
+		self.dir.x = 1
 	elseif action_id == hash("fire") and action.pressed then
 		self.firing = true
 	end

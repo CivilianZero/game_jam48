@@ -37,11 +37,12 @@ embedded_components {
   id: "collisionobject"
   type: "collisionobject"
   data: "collision_shape: \"\"\n"
-  "type: COLLISION_OBJECT_TYPE_DYNAMIC\n"
-  "mass: 1.0\n"
+  "type: COLLISION_OBJECT_TYPE_STATIC\n"
+  "mass: 0.0\n"
   "friction: 0.1\n"
   "restitution: 0.5\n"
   "group: \"torpedo\"\n"
+  "mask: \"cave\"\n"
   "mask: \"enemy\"\n"
   "embedded_collision_shape {\n"
   "  shapes {\n"
@@ -66,7 +67,7 @@ embedded_components {
   "}\n"
   "linear_damping: 0.0\n"
   "angular_damping: 0.0\n"
-  "locked_rotation: false\n"
+  "locked_rotation: true\n"
   ""
   position {
     x: 0.0

@@ -52,17 +52,44 @@ embedded_components {
   }
 }
 embedded_components {
-  id: "sprite1"
-  type: "sprite"
-  data: "tile_set: \"/main/sprites.atlas\"\n"
-  "default_animation: \"vision cone\"\n"
-  "material: \"/builtins/materials/sprite.material\"\n"
-  "blend_mode: BLEND_MODE_ALPHA\n"
+  id: "collisionobject"
+  type: "collisionobject"
+  data: "collision_shape: \"\"\n"
+  "type: COLLISION_OBJECT_TYPE_KINEMATIC\n"
+  "mass: 0.0\n"
+  "friction: 0.1\n"
+  "restitution: 0.5\n"
+  "group: \"sub\"\n"
+  "mask: \"cave\"\n"
+  "embedded_collision_shape {\n"
+  "  shapes {\n"
+  "    shape_type: TYPE_BOX\n"
+  "    position {\n"
+  "      x: -1.0\n"
+  "      y: 1.0\n"
+  "      z: 0.0\n"
+  "    }\n"
+  "    rotation {\n"
+  "      x: 0.0\n"
+  "      y: 0.0\n"
+  "      z: 0.0\n"
+  "      w: 1.0\n"
+  "    }\n"
+  "    index: 0\n"
+  "    count: 3\n"
+  "  }\n"
+  "  data: 9.097\n"
+  "  data: 6.283\n"
+  "  data: 10.0\n"
+  "}\n"
+  "linear_damping: 50.0\n"
+  "angular_damping: 50.0\n"
+  "locked_rotation: true\n"
   ""
   position {
-    x: 7.0
-    y: -9.0
-    z: 1.0
+    x: 0.0
+    y: 0.0
+    z: 0.0
   }
   rotation {
     x: 0.0

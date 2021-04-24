@@ -99,7 +99,7 @@ embedded_components {
   }
 }
 embedded_components {
-  id: "vision cone"
+  id: "vision_cone"
   type: "sprite"
   data: "tile_set: \"/main/sprites.atlas\"\n"
   "default_animation: \"vision cone\"\n"
@@ -109,7 +109,7 @@ embedded_components {
   position {
     x: 4.0
     y: -7.0
-    z: 1.0
+    z: 0.0
   }
   rotation {
     x: 0.0

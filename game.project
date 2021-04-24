@@ -3,6 +3,7 @@ title = game_jam48
 
 [bootstrap]
 main_collection = /main/main.collectionc
+render = /render/custom render.renderc
 
 [input]
 game_binding = /input/game.input_bindingc
@@ -29,6 +30,9 @@ default_texture_min_filter = nearest
 default_texture_mag_filter = nearest
 
 [display]
-height = 320
-width = 480
+height = 800
+width = 1280
+
+[sprite]
+subpixels = 0
 

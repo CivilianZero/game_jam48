@@ -7,6 +7,7 @@ function init(self)
 end
 
 local function explode(self)
+	self.explosion_timer = 1000
 	go.set_rotation(vmath.quat())
 	msg.post("#collisionobject", "disable")
 	msg.post("#sprite", "play_animation", { id = hash("explosion") })

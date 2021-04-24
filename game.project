@@ -21,8 +21,7 @@ app_icon = /assets/app_icons/appicon.icns
 input_method = HiddenInputField
 
 [physics]
-gravity_y = 0.0
-scale = 0.01
+scale = 0.02
 
 [graphics]
 default_texture_min_filter = nearest

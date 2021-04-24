@@ -17,7 +17,7 @@ function update(self, dt)
 		self.input = vmath.normalize(self.input)
 	end
 
-	local acceleration = self.input * 50
+	local acceleration = self.input * 80
 	
 	local dv = acceleration * dt
 	local v0 = self.velocity

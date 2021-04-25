@@ -12,20 +12,24 @@ animations {
 animations {
   id: "torpedo"
   images {
-    image: "/assets/sprites/torpedo/1.png"
+    image: "/assets/sprites/torpedo/torpedoo1.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/assets/sprites/torpedo/2.png"
+    image: "/assets/sprites/torpedo/torpedoo2.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/assets/sprites/torpedo/3.png"
+    image: "/assets/sprites/torpedo/torpedoo3.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/torpedo/torpedoo4.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   playback: PLAYBACK_LOOP_FORWARD
   fps: 12
-  flip_horizontal: 1
+  flip_horizontal: 0
   flip_vertical: 0
 }
 animations {

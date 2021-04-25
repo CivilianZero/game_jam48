@@ -7,6 +7,7 @@ function init(self)
 	self.correction = vmath.vector3()
 	self.dir = vmath.vector3(1, 0, 0)
 	self.firing = false
+	self.health = 3
 end
 
 function final(self)
@@ -61,6 +62,10 @@ function on_message(self, message_id, message, sender)
 				self.correction = self.correction + comp
 			end
 		end
+	end
+	if message_id == hash("damage") then
+		self.health = self.health - 1
+		print(self.health)
 	end
 end
 

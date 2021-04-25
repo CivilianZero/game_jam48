@@ -4,8 +4,20 @@ function init(self)
 	-- Remove this function if not needed
 end
 
+local function explode(self)
+	msg.post("#collisionobject", "disable")
+	msg.post("#sprite", "play_animation", { id = hash("explosion") })
+end
+
 function on_message(self, message_id, message, sender)
+	if message_id == hash("animation_done") then
+		go.delete()
+	end
 	if message_id == hash("collision_response") then
 		print("collided with"..message.other_id)
+		if message.other_id == hash("/sub") then
+			msg.post("sub", "damage")
+			explode(self)
+		end
 	end
 end

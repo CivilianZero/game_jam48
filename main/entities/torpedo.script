@@ -14,9 +14,6 @@ local function explode(self)
 end
 
 function update(self, dt)
-	-- local pos = go.get_position()
-	-- pos = pos + self.dir * self.speed * dt
-	-- go.set_position(pos)
 	if self.speed < 200 and self.max_speed_reached == false then
 		self.speed = self.speed + 5
 	elseif self.speed > -30 then

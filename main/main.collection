@@ -37,8 +37,13 @@ instances {
     id: "script"
     properties {
       id: "zoom"
-      value: "2.5"
+      value: "2.0"
       type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "projection"
+      value: "FIXED_AUTO"
+      type: PROPERTY_TYPE_HASH
     }
     properties {
       id: "follow"
@@ -49,6 +54,26 @@ instances {
       id: "follow_target"
       value: "/sub"
       type: PROPERTY_TYPE_HASH
+    }
+    properties {
+      id: "deadzone_left"
+      value: "30.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "deadzone_bottom"
+      value: "25.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "deadzone_right"
+      value: "50.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "deadzone_top"
+      value: "25.0"
+      type: PROPERTY_TYPE_NUMBER
     }
   }
   scale3 {

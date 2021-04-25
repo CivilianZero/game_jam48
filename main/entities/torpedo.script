@@ -34,7 +34,6 @@ function on_message(self, message_id, message, sender)
 		go.delete()
 	elseif message_id == hash("collision_response") then
 		explode(self)
-		print("torpedo collision with "..message.other_group)
 		if message.other_group == "enemy" then
 			go.delete(message.other_id)
 		end

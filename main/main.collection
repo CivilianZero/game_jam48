@@ -582,6 +582,163 @@ instances {
     z: 1.0
   }
 }
+instances {
+  id: "fish"
+  prototype: "/main/entities/fish.go"
+  position {
+    x: 534.0
+    y: 443.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  component_properties {
+    id: "fish"
+    properties {
+      id: "Start_path_ID"
+      value: "1.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "End_path_ID"
+      value: "3.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "speed"
+      value: "10.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "NavGO_directionalNodeGO"
+  prototype: "/navGo_pathfinding/directionalNode/NavGO_directionalNodeGO.go"
+  position {
+    x: 472.0
+    y: 407.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  component_properties {
+    id: "NavGo_directionalScript"
+    properties {
+      id: "Node_ID"
+      value: "1.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "Node_Next"
+      value: "2.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 1.0
+  }
+}
+instances {
+  id: "NavGO_directionalNodeGO1"
+  prototype: "/navGo_pathfinding/directionalNode/NavGO_directionalNodeGO.go"
+  position {
+    x: 522.0
+    y: 466.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  component_properties {
+    id: "NavGo_directionalScript"
+    properties {
+      id: "Node_ID"
+      value: "2.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "Node_Next"
+      value: "3.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 1.0
+  }
+}
+instances {
+  id: "NavGO_directionalNodeGO2"
+  prototype: "/navGo_pathfinding/directionalNode/NavGO_directionalNodeGO.go"
+  position {
+    x: 418.0
+    y: 474.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  component_properties {
+    id: "NavGo_directionalScript"
+    properties {
+      id: "Node_ID"
+      value: "3.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "Node_Next"
+      value: "1.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 1.0
+  }
+}
+instances {
+  id: "NavGO_HandlerGO"
+  prototype: "/navGo_pathfinding/Handler/NavGO_HandlerGO.go"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
 scale_along_z: 0
 embedded_instances {
   id: "map"
@@ -768,7 +925,7 @@ embedded_instances {
 }
 embedded_instances {
   id: "enemies"
-  children: "anglerfish"
+  children: "fish"
   data: ""
   position {
     x: 0.0
@@ -788,15 +945,34 @@ embedded_instances {
   }
 }
 embedded_instances {
-  id: "anglerfish"
-  data: "embedded_components {\n"
-  "  id: \"sprite\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/main/sprites.atlas\\\"\\n"
-  "default_animation: \\\"anglerfish\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
+  id: "nav nodes"
+  children: "NavGO_HandlerGO"
+  children: "NavGO_directionalNodeGO"
+  children: "NavGO_directionalNodeGO1"
+  children: "NavGO_directionalNodeGO2"
+  data: ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "main"
+  data: "components {\n"
+  "  id: \"main\"\n"
+  "  component: \"/main/main.script\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
@@ -811,8 +987,8 @@ embedded_instances {
   "}\n"
   ""
   position {
-    x: 532.0
-    y: 435.0
+    x: 0.0
+    y: 0.0
     z: 0.0
   }
   rotation {

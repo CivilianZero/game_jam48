@@ -3,7 +3,7 @@ title = game_jam48
 dependencies = https://github.com/britzl/defold-orthographic/archive/master.zip,https://github.com/Insality/defold-printer/archive/master.zip,https://github.com/DrCampbell2017/NavGO/archive/master.zip
 
 [bootstrap]
-main_collection = /main/level2test.collectionc
+main_collection = /main/main.collectionc
 render = /orthographic/render/orthographic.renderc
 
 [input]

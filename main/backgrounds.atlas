@@ -6,6 +6,14 @@ images {
   image: "/assets/backgrounds/Screen-3fg.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
+images {
+  image: "/assets/backgrounds/02-04-bg.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/assets/backgrounds/02-04-fg.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
 animations {
   id: "New Animation"
   playback: PLAYBACK_LOOP_FORWARD

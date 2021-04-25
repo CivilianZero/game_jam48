@@ -4,7 +4,7 @@ function init(self)
 	self.speed = 20
 	self.max_speed_reached = false
 	self.explosion_timer = 2
-	sound.play("#explosion")
+	sound.play("#launch")
 end
 
 local function explode(self)

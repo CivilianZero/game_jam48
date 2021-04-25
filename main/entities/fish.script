@@ -16,6 +16,10 @@ local function volume_by_dist(distance)
 	sound.set_gain("#growl", gain)
 end
 
+local function toggle_paralyze(self)
+	self.paralyze = not self.paralyze
+end
+
 local function moveCharacter(self)
 	local path, found = NAVGO.GET_PATH_FROM_DIRECTIONAL_ID(self.Start_path_ID, self.End_path_ID)
 	if not found then
@@ -41,10 +45,15 @@ end
 
 function init(self)
 	self.pathing = true
+	self.paralyze = false
 	sound.play("#growl", { gain = 0 })
 end
 
 function update(self, dt)
+	if self.paralyze == true then
+		dt = 0
+		return
+	end
 	local pos = go.get_position()
 	local player_pos = go.get_position("/sub")
 	local distance = distance(pos, player_pos)
@@ -65,6 +74,11 @@ function on_message(self, message_id, message, sender)
 	if message_id == hash("collision_response") then
 		if message.other_group == hash("sub") then
 			msg.post("/sub", "damage")
+		end
+		if message.other_group == hash("torpedo") then
+			toggle_paralyze(self)
+			sound.play("#hurt")
+			timer.delay(5, false, toggle_paralyze)
 		end
 	end
 end

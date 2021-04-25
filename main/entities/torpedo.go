@@ -82,9 +82,9 @@ embedded_components {
   }
 }
 embedded_components {
-  id: "explosion"
+  id: "launch"
   type: "sound"
-  data: "sound: \"/assets/SFX/Collision/CollisionSubfinal_Mono.wav\"\n"
+  data: "sound: \"/assets/SFX/Torpedo/TorpedoLaunch_Mono.wav\"\n"
   "looping: 0\n"
   "group: \"torpedo\"\n"
   "gain: 0.5\n"

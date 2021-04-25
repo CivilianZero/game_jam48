@@ -62,6 +62,7 @@ embedded_components {
   "group: \"sub\"\n"
   "mask: \"cave\"\n"
   "mask: \"enemy\"\n"
+  "mask: \"salvage\"\n"
   "embedded_collision_shape {\n"
   "  shapes {\n"
   "    shape_type: TYPE_BOX\n"
@@ -148,6 +149,29 @@ embedded_components {
   data: "sound: \"/assets/SFX/Collision/CollisionSubfinal_Mono.wav\"\n"
   "looping: 0\n"
   "group: \"sub\"\n"
+  "gain: 1.0\n"
+  "pan: 0.0\n"
+  "speed: 1.0\n"
+  "loopcount: 0\n"
+  ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+}
+embedded_components {
+  id: "pickup"
+  type: "sound"
+  data: "sound: \"/assets/SFX/Item Pick-up/Pick-up noiseFinal_Mono.wav\"\n"
+  "looping: 0\n"
+  "group: \"master\"\n"
   "gain: 1.0\n"
   "pan: 0.0\n"
   "speed: 1.0\n"

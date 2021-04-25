@@ -249,7 +249,7 @@ instances {
 }
 instances {
   id: "relic1"
-  prototype: "/main/entities/relic.go"
+  prototype: "/main/entities/salvage.go"
   position {
     x: 980.0
     y: 230.0
@@ -269,7 +269,7 @@ instances {
 }
 instances {
   id: "salvage1"
-  prototype: "/main/entities/relic.go"
+  prototype: "/main/entities/salvage.go"
   position {
     x: 284.0
     y: 55.0

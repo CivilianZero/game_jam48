@@ -3,7 +3,7 @@ go.property("dir", vmath.vector3())
 function init(self)
 	self.speed = 20
 	self.max_speed_reached = false
-	self.explosion_timer = 1
+	self.explosion_timer = 2
 end
 
 local function explode(self)
@@ -19,7 +19,7 @@ function update(self, dt)
 		self.speed = self.speed + 5 * dt
 	elseif self.speed > -10 then
 		self.max_speed_reached = true
-		self.speed = self.speed - 20 * dt
+		self.speed = self.speed - 30 * dt
 	else
 		self.explosion_timer = self.explosion_timer - dt
 		if self.explosion_timer < 0 then

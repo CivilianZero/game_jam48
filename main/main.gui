@@ -1,4 +1,4 @@
-script: "/main/sub.gui_script"
+script: "/main/main.gui_script"
 fonts {
   name: "early_gameboy"
   font: "/assets/font/early_gameboy.font"

@@ -188,22 +188,22 @@ convex_hulls {
 convex_hulls {
   index: 58
   count: 5
-  collision_group: ""
+  collision_group: "cave"
 }
 convex_hulls {
   index: 63
   count: 4
-  collision_group: ""
+  collision_group: "cave"
 }
 convex_hulls {
   index: 67
   count: 4
-  collision_group: ""
+  collision_group: "cave"
 }
 convex_hulls {
   index: 71
   count: 5
-  collision_group: ""
+  collision_group: "cave"
 }
 convex_hulls {
   index: 76
@@ -268,22 +268,22 @@ convex_hulls {
 convex_hulls {
   index: 91
   count: 4
-  collision_group: ""
+  collision_group: "cave"
 }
 convex_hulls {
   index: 95
   count: 6
-  collision_group: ""
+  collision_group: "cave"
 }
 convex_hulls {
   index: 101
   count: 6
-  collision_group: ""
+  collision_group: "cave"
 }
 convex_hulls {
   index: 107
   count: 4
-  collision_group: ""
+  collision_group: "cave"
 }
 convex_hulls {
   index: 111
@@ -348,22 +348,22 @@ convex_hulls {
 convex_hulls {
   index: 121
   count: 4
-  collision_group: ""
+  collision_group: "cave"
 }
 convex_hulls {
   index: 125
   count: 6
-  collision_group: ""
+  collision_group: "cave"
 }
 convex_hulls {
   index: 131
   count: 6
-  collision_group: ""
+  collision_group: "cave"
 }
 convex_hulls {
   index: 137
   count: 4
-  collision_group: ""
+  collision_group: "cave"
 }
 convex_hulls {
   index: 141
@@ -428,22 +428,22 @@ convex_hulls {
 convex_hulls {
   index: 155
   count: 5
-  collision_group: ""
+  collision_group: "cave"
 }
 convex_hulls {
   index: 160
   count: 4
-  collision_group: ""
+  collision_group: "cave"
 }
 convex_hulls {
   index: 164
   count: 4
-  collision_group: ""
+  collision_group: "cave"
 }
 convex_hulls {
   index: 168
   count: 5
-  collision_group: ""
+  collision_group: "cave"
 }
 convex_hulls {
   index: 173

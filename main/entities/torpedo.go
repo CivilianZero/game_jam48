@@ -87,7 +87,7 @@ embedded_components {
   data: "sound: \"/assets/SFX/Collision/CollisionSubfinal_Mono.wav\"\n"
   "looping: 0\n"
   "group: \"torpedo\"\n"
-  "gain: 1.0\n"
+  "gain: 0.5\n"
   "pan: 0.0\n"
   "speed: 1.0\n"
   "loopcount: 0\n"

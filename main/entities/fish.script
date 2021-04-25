@@ -18,6 +18,9 @@ local function moveCharacter(self)
 		local lastPos = go.get_position()
 
 		for i=1, #path do
+			if self.pathing == false then
+				return
+			end
 			local newPosition = vmath.vector3(path[i].x, path[i].y, 0)
 			local time = distance(newPosition, lastPos) / self.speed -- move at a consistend speed
 			go.animate(go.get_id(), "position", go.PLAYBACK_ONCE_FORWARD, newPosition, go.EASING_LINEAR, time, delay)
@@ -29,12 +32,28 @@ local function moveCharacter(self)
 end
 
 function init(self)
-	self.chase = false
-	timer.delay(1, false, moveCharacter)
+	self.pathing = true
 end
 
 function update(self, dt)
 	local pos = go.get_position()
+	local player_pos = go.get_position("/sub")
+	local distance = distance(pos, player_pos)
+	if distance < 150 then
+		self.pathing = false
+		-- self.speed = self.speed + 10as
+		local dir = player_pos - pos
+		dir = vmath.normalize(dir)
+		if pos.x > player_pos.x then
+			-- go right
+		else
+			-- go left
+		end
+		go.set_position(pos + dir * self.speed * dt)
+	elseif self.pathing == false and distance > 150 then
+		self.pathing = true
+		timer.delay(1, false, moveCharacter)
+	end
 end
 
 function on_message(self, message_id, message, sender)

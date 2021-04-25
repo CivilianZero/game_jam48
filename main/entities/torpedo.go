@@ -1,6 +1,6 @@
 components {
   id: "torpedo"
-  component: "/main/torpedo.script"
+  component: "/main/entities/torpedo.script"
   position {
     x: 0.0
     y: 0.0

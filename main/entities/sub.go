@@ -1,6 +1,6 @@
 components {
   id: "sub"
-  component: "/main/sub.script"
+  component: "/main/entities/sub.script"
   position {
     x: 0.0
     y: 0.0
@@ -36,7 +36,7 @@ embedded_components {
 embedded_components {
   id: "torpedofactory"
   type: "factory"
-  data: "prototype: \"/main/torpedo.go\"\n"
+  data: "prototype: \"/main/entities/torpedo.go\"\n"
   "load_dynamically: false\n"
   ""
   position {

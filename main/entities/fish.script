@@ -72,9 +72,6 @@ end
 
 function on_message(self, message_id, message, sender)
 	if message_id == hash("collision_response") then
-		if message.other_group == hash("sub") then
-			msg.post("/sub", "damage")
-		end
 		if message.other_group == hash("torpedo") then
 			toggle_paralyze(self)
 			sound.play("#hurt")

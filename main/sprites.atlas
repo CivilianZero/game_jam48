@@ -386,7 +386,7 @@ animations {
 animations {
   id: "dire jellyfihas"
   images {
-    image: "/assets/sprites/dire-jellyfish/dire-jellfish.png"
+    image: "/assets/sprites/dire-jellyfish/dire-jellfish1.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   playback: PLAYBACK_LOOP_FORWARD

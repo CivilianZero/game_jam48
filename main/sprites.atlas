@@ -35,39 +35,59 @@ animations {
 animations {
   id: "explosion"
   images {
-    image: "/assets/sprites/explosion/1.png"
+    image: "/assets/sprites/explosion/explosion1.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/assets/sprites/explosion/2.png"
+    image: "/assets/sprites/explosion/explosion2.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/assets/sprites/explosion/3.png"
+    image: "/assets/sprites/explosion/explosion3.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/assets/sprites/explosion/4.png"
+    image: "/assets/sprites/explosion/explosion4.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/assets/sprites/explosion/5.png"
+    image: "/assets/sprites/explosion/explosion5.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/assets/sprites/explosion/6.png"
+    image: "/assets/sprites/explosion/explosion6.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/assets/sprites/explosion/7.png"
+    image: "/assets/sprites/explosion/explosion7.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/assets/sprites/explosion/8.png"
+    image: "/assets/sprites/explosion/explosion8.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/assets/sprites/explosion/9.png"
+    image: "/assets/sprites/explosion/explosion9.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/explosion/explosion10.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/explosion/explosion11.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/explosion/explosion12.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/explosion/explosion13.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/explosion/explosion14.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   playback: PLAYBACK_ONCE_FORWARD
@@ -254,17 +274,6 @@ animations {
   flip_vertical: 0
 }
 animations {
-  id: "bomb"
-  images {
-    image: "/assets/sprites/chainbomb.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  playback: PLAYBACK_LOOP_FORWARD
-  fps: 60
-  flip_horizontal: 0
-  flip_vertical: 0
-}
-animations {
   id: "turret"
   images {
     image: "/assets/sprites/turret.png"
@@ -300,7 +309,7 @@ animations {
 animations {
   id: "anglerfish"
   images {
-    image: "/assets/sprites/anglerfish.png"
+    image: "/assets/sprites/anglerfish/anglerfish1.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   playback: PLAYBACK_LOOP_FORWARD

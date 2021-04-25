@@ -30,7 +30,7 @@ function update(self, dt)
 		end
 	end
 
-	local acceleration = self.input * 50
+	local acceleration = self.input * 40
 	
 	local dv = acceleration * dt
 	local v0 = self.velocity
@@ -46,7 +46,7 @@ function update(self, dt)
 	local p = go.get_position()
 	go.set_position(p + movement)
 
-	self.velocity = v1 * 0.99
+	self.velocity = v1 * 0.995
 	self.input = vmath.vector3()
 	self.firing = false
 	self.correction = vmath.vector3()

@@ -27,8 +27,8 @@ nodes {
     w: 1.0
   }
   scale {
-    x: 6.0
-    y: 6.0
+    x: 5.0
+    y: 5.0
     z: 1.0
     w: 1.0
   }
@@ -81,8 +81,8 @@ nodes {
     w: 1.0
   }
   scale {
-    x: 5.0
-    y: 5.0
+    x: 4.0
+    y: 4.0
     z: 1.0
     w: 1.0
   }
@@ -100,7 +100,7 @@ nodes {
   }
   type: TYPE_BOX
   blend_mode: BLEND_MODE_ALPHA
-  texture: "gui/UI-minisub"
+  texture: "gui/UI-minisub1"
   id: "sub"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
@@ -135,8 +135,8 @@ nodes {
     w: 1.0
   }
   scale {
-    x: 5.0
-    y: 5.0
+    x: 4.0
+    y: 4.0
     z: 1.0
     w: 1.0
   }

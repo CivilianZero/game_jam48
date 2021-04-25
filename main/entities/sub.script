@@ -8,6 +8,7 @@ function init(self)
 	self.dir = vmath.vector3(1, 0, 0)
 	self.firing = false
 	self.health = 3
+	self.torpedo_count = 0
 end
 
 function final(self)
@@ -20,10 +21,13 @@ function update(self, dt)
 	end
 
 	if self.firing then
-		local angle = math.atan2(self.dir.y, self.dir.x)
-		local rot = vmath.quat_rotation_z(angle)
-		local props = { dir = self.dir }
-		factory.create("#torpedofactory", nil, rot, props)
+		if self.torpedo_count == 0 then
+			self.torpedo_count = 1
+			local angle = math.atan2(self.dir.y, self.dir.x)
+			local rot = vmath.quat_rotation_z(angle)
+			local props = { dir = self.dir }
+			factory.create("#torpedofactory", nil, rot, props)
+		end
 	end
 
 	local acceleration = self.input * 50
@@ -49,10 +53,6 @@ function update(self, dt)
 end
 
 function on_message(self, message_id, message, sender)
-	-- if message_id == hash("collision_response") then
-	-- 	print("collided with "..message.other_id)
-	-- 	print("collided with group "..message.other_group)
-	-- end
 	if message_id == hash("contact_point_response") then
 		if message.distance > 0 then
 			local proj = vmath.project(self.correction, message.normal * message.distance)
@@ -66,6 +66,9 @@ function on_message(self, message_id, message, sender)
 	if message_id == hash("damage") then
 		self.health = self.health - 1
 		print(self.health)
+	end
+	if message_id == hash("torpedo_exploded") then
+		self.torpedo_count = 0
 	end
 end
 

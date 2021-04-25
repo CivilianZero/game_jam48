@@ -8,6 +8,14 @@ local function distance(vec1, vec2)
 	return math.ceil( math.sqrt( math.pow(vec1.x - vec2.x, 2) + math.pow(vec1.y - vec2.y, 2) ) )
 end
 
+local function volume_by_dist(distance)
+	local gain = math.min(1, 50/distance)
+	if gain < 0.4 then
+		gain = 0
+	end
+	sound.set_gain("#growl", gain)
+end
+
 local function moveCharacter(self)
 	local path, found = NAVGO.GET_PATH_FROM_DIRECTIONAL_ID(self.Start_path_ID, self.End_path_ID)
 	if not found then
@@ -33,6 +41,7 @@ end
 
 function init(self)
 	self.pathing = true
+	sound.play("#growl", { gain = 0 })
 end
 
 function update(self, dt)
@@ -40,15 +49,11 @@ function update(self, dt)
 	local player_pos = go.get_position("/sub")
 	local distance = distance(pos, player_pos)
 	if distance < 150 then
+		volume_by_dist(distance)
 		self.pathing = false
-		-- self.speed = self.speed + 10as
 		local dir = player_pos - pos
 		dir = vmath.normalize(dir)
-		if pos.x > player_pos.x then
-			-- go right
-		else
-			-- go left
-		end
+		sprite.set_hflip("#sprite", dir.x > 0)
 		go.set_position(pos + dir * self.speed * dt)
 	elseif self.pathing == false and distance > 150 then
 		self.pathing = true
@@ -58,8 +63,6 @@ end
 
 function on_message(self, message_id, message, sender)
 	if message_id == hash("collision_response") then
-		print("collided with"..message.other_id)
-		print("group collided with"..message.other_group)
 		if message.other_group == hash("sub") then
 			msg.post("/sub", "damage")
 		end

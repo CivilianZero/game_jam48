@@ -12,7 +12,9 @@ function init(self)
 	self.firing = false
 	self.health = 3
 	self.torpedo_count = 0
+	self.max_torpedo = 3
 	self.invul = false
+	self.engine_on = false
 end
 
 function final(self)
@@ -57,6 +59,12 @@ function update(self, dt)
 	
 	local p = go.get_position()
 	go.set_position(p + movement)
+	
+	if vmath.length_sqr(self.velocity) > 0 and self.engine_on == false then
+		self.engine_on = true
+		sound.play("#engine", { gain = 0.1})
+	else
+	end
 
 	self.velocity = v1 * 0.995
 	self.input = vmath.vector3()
@@ -83,6 +91,7 @@ function on_message(self, message_id, message, sender)
 	if message_id == hash("damage") and self.invul == false then
 		self.health = self.health - 1
 		toggleInvul(self)
+		msg.post("/scripts#sound_gate", "play_gated_sound", { soundcomponent = "/sub#damage"})
 		camera.shake(hash("/camera"), 0.01, 0.5, both)
 		timer.delay(3, false, toggleInvul)
 	end
@@ -102,10 +111,11 @@ function on_input(self, action_id, action)
 	elseif action_id == hash("right") then
 		self.input.x = 1
 		self.dir.x = 1
-	elseif action_id == hash("fire") and action.pressed then
+	elseif action_id == hash("fire") and action.pressed and self.max_torpedo > 0 then
 		self.firing = true
+		self.max_torpedo = self.max_torpedo - 1
 	end
-	if action_id == hash("up") or action_id == hash("down") or action_id == hash("left") or action_id == hash("right") then
-		sound.play("#engine")
-	end
+	-- if action_id == hash("up") or action_id == hash("down") or action_id == hash("left") or action_id == hash("right") then
+	-- 	msg.post("/scripts#sound_gate", "play_single_gated_sound", { soundcomponent = "/sub#engine" })
+	-- end
 end

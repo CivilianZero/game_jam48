@@ -152,8 +152,8 @@ instances {
   id: "salvage3"
   prototype: "/main/entities/salvage.go"
   position {
-    x: 594.0
-    y: 274.0
+    x: 719.0
+    y: 174.0
     z: 0.0
   }
   rotation {
@@ -212,8 +212,8 @@ instances {
   id: "salvage6"
   prototype: "/main/entities/salvage.go"
   position {
-    x: 547.0
-    y: 145.0
+    x: 727.0
+    y: 228.0
     z: 0.0
   }
   rotation {

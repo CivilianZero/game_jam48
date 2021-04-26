@@ -1,12 +1,23 @@
-function init(self)
-	-- Add initialization code here
-	-- Learn more: https://defold.com/manuals/script/
-	-- Remove this function if not needed
+local function distance(vec1, vec2)
+	return math.ceil( math.sqrt( math.pow(vec1.x - vec2.x, 2) + math.pow(vec1.y - vec2.y, 2) ) )
 end
 
 local function explode(self)
 	msg.post("#collisionobject", "disable")
 	msg.post("#sprite", "play_animation", { id = hash("explosion") })
+end
+
+
+function update(self, dt)
+	local sub_pos = go.get_position("/sub")
+	local pos = go.get_position()
+	local dist = distance(pos, sub_pos)
+
+	if dist < 75 then
+		sprite.play_flipbook("#lockon", "salve2")
+	else
+		sprite.play_flipbook("#lockon", "empty")
+	end
 end
 
 function on_message(self, message_id, message, sender)

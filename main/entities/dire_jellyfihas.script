@@ -1,0 +1,27 @@
+local function distance(vec1, vec2)
+	return math.ceil( math.sqrt( math.pow(vec1.x - vec2.x, 2) + math.pow(vec1.y - vec2.y, 2) ) )
+end
+
+function update(self, dt)
+	local sub_pos = go.get_position("/sub")
+	local pos = go.get_position() 
+	local dist = distance(pos, sub_pos)
+
+	if dist < 40 then
+		sprite.play_flipbook("#lockon", "dire-jellfish2")
+	else
+		sprite.play_flipbook("#lockon", "empty")
+	end
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("animation_done") then
+		go.delete()
+	end
+	if message_id == hash("collision_response") then
+		print("collided with"..message.other_id)
+		if message.other_id == hash("/sub") then
+			msg.post("sub", "damage")
+		end
+	end
+end

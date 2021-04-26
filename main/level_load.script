@@ -1,7 +1,7 @@
 function init(self)
 	msg.post(".", "acquire_input_focus")
 	self.current_level = 1
-	msg.post(".", "load_level", { level = 3 })
+	msg.post(".", "load_level", { level = 1 })
 end
 
 function on_message(self, message_id, message, sender)

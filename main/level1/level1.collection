@@ -4,8 +4,8 @@ instances {
   prototype: "/main/entities/sub.go"
   children: "depth-checker"
   position {
-    x: 1081.0
-    y: 389.0
+    x: -131.0
+    y: 821.0
     z: 0.0
   }
   rotation {
@@ -2165,7 +2165,7 @@ embedded_instances {
   "  position {\n"
   "    x: -935.0\n"
   "    y: 151.0\n"
-  "    z: 1.0\n"
+  "    z: 0.0\n"
   "  }\n"
   "  rotation {\n"
   "    x: 0.0\n"
@@ -2185,7 +2185,7 @@ embedded_instances {
   "  position {\n"
   "    x: -76.0\n"
   "    y: -1115.0\n"
-  "    z: 1.0\n"
+  "    z: 0.0\n"
   "  }\n"
   "  rotation {\n"
   "    x: 0.0\n"
@@ -2428,7 +2428,7 @@ embedded_instances {
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
-  "    z: 1.0\n"
+  "    z: 0.8\n"
   "  }\n"
   "  rotation {\n"
   "    x: 0.0\n"

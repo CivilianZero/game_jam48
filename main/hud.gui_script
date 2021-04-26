@@ -6,32 +6,34 @@ local styles = {
 	}
 }
 
-texts = {"{standard}Salvage detected within the cave system.", 
-"{standard}More signals detected.",
-"{standard}"}
-salvage_level_1 = {"{standard}Destroyer wreckage, decades old. Highly corroded.",
-"{standard}Remnants of frigate hull cuttings.",
-"{standard}Discarded munitions. Still of use.",
-"{standard}Lost research equipment. Study subjects unknown.",
-"{standard}Shell casings. Relatively recent. Origin unknown."}
-salvage_level_2 = {"{standard}Blood. Blood in the water...",
-"{standard}Brass and Steel plates. Engineering vessel.",
-"{standard}Impossible metal shapes. Filled with holess.",
-"{standard}Wood and Wine. Shipwreck.",
-"{standard}Crystalline formations. Formed over Skeletons.",
-"{standard}Fossils of Unknown Specimens. Science Vessel."}
-salvage_level_3 = {"{standard}The Holy.",
-"{standard}The Vessel: Empty. Or The Vessel. Empty.",
-"{standard}A Void of Effervescence",
-"{standard}A Seal on a Hole in the World",
-"{standard}Tissue formed from Steel",
-"{standard}The Final Step"}
+texts = {"{standard}Salvage detected within the cave system. Go a little deeper and see how much you can find.", 
+"{standard}This can't be right, you're....that's too deep, but...more signals detected.",
+"{standard}Losing signal, please respond. Are you there?"}
+salvage_texts = {
+	{"{standard}Destroyer wreckage, decades old. Highly corroded.",
+	"{standard}Remnants of frigate hull cuttings.",
+	"{standard}Discarded munitions. Still of use.",
+	"{standard}Lost research equipment. Study subjects unknown.",
+	"{standard}Shell casings. Relatively recent. Origin unknown."},
+	{"{standard}Blood. Blood in the water...",
+	"{standard}Brass and Steel plates. Engineering vessel.",
+	"{standard}Impossible metal shapes. Filled with holess.",
+	"{standard}Wood and Wine. Shipwreck.",
+	"{standard}Crystalline formations. Formed over Skeletons.",
+	"{standard}Fossils of Unknown Specimens. Science Vessel."},
+	{"{standard}The Holy.",
+	"{standard}The Vessel: Empty. Or The Vessel. Empty.",
+	"{standard}A Void of Effervescence",
+	"{standard}A Seal on a Hole in the World",
+	"{standard}Tissue formed from Steel",
+	"{standard}The Final Step"}
+}
 
 function init(self)
 	self.printer = printer.new(self, "printer")
 	printer.add_styles(styles)
-	self.index = 1
 	self.current_depth = 0
+	self.current_level = 1
 	printer.play_sound = function(name)
 		sound.play("main:/sounds#" .. name)
 	end
@@ -84,20 +86,21 @@ function on_message(self, message_id, message, sender)
 		local text_node = gui.get_node("depth")
 		local text = gui.get_text(text_node)
 		if depth < self.current_depth - 9 then
-			gui.set_text(text_node, "00"..text + 1)
+			gui.set_text(text_node, "00"..(text + 1))
 			self.current_depth = depth
 		elseif depth > self.current_depth + 9 then
-			gui.set_text(text_node, "00"..text - 1)
+			gui.set_text(text_node, "00"..(text - 1))
 			self.current_depth = depth
 		end
 	end
 	if message_id == hash("salvage_text") then
-		local level = "salvage_level_"..message.level
+		local level = message.level
 		local index = tonumber(message.salvage_number)
-		self.printer:print(_G[level][index])
+		self.printer:print(salvage_texts[level][index])
 	end
 	if message_id == hash("open_text") then
 		local index = tonumber(message.level)
+		self.current_level = index
 		timer.delay(0.5, false, function()
 			self.printer:print(texts[index])
 		end)

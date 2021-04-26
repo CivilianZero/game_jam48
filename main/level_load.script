@@ -14,7 +14,7 @@ function on_message(self, message_id, message, sender)
 		msg.post("#", "load_level", { level = self.current_level + 1 })
 	elseif message_id == hash("intermission") then
 		msg.post("#", "unload_level")
-		if current_level == 3 then
+		if self.current_level == 3 then
 			msg.post("#", "load_end")
 		else
 			local proxy = "#intermission"

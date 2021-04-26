@@ -1,5 +1,5 @@
 [project]
-title = game_jam48
+title = No one is here
 dependencies = https://github.com/britzl/defold-orthographic/archive/master.zip,https://github.com/DrCampbell2017/NavGO/archive/master.zip,https://github.com/Insality/defold-printer/archive/master.zip
 
 [bootstrap]
@@ -14,7 +14,7 @@ use_accelerometer = 0
 shared_state = 1
 
 [windows]
-app_icon = /assets/app_icons/appicon.ico
+app_icon = /assets/app_icons/appicon_backup.ico
 
 [osx]
 app_icon = /assets/app_icons/appicon.icns

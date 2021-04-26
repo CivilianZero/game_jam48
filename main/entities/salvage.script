@@ -1,0 +1,15 @@
+local function distance(vec1, vec2)
+	return math.ceil( math.sqrt( math.pow(vec1.x - vec2.x, 2) + math.pow(vec1.y - vec2.y, 2) ) )
+end
+
+function update(self, dt)
+	local sub_pos = go.get_position("/sub")
+	local pos = go.get_position()
+	local dist = distance(pos, sub_pos)
+
+	if dist < 75 then
+		go.set("#lockon", "image", hash("salve2"))
+	else
+		go.set("#lockon", "image", hash(""))
+	end
+end

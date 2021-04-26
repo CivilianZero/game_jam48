@@ -22,8 +22,9 @@ end
 
 function init(self)
 	self.printer = printer.new(self, "printer")
-	self.printer.add_styles(styles)
+	printer.add_styles(styles)
 	self.index = 1
+	self.current_depth = 
 	timer.delay(0.5, false, function()
 		next_print(self)
 	end)
@@ -35,6 +36,9 @@ end
 
 function update(self, dt)
 	self.printer:update(dt)
+	-- if not self.printer.is_print then
+	-- 	
+	-- end
 end
 
 function on_message(self, message_id, message, sender)
@@ -67,5 +71,8 @@ function on_message(self, message_id, message, sender)
 		elseif message.remaining == 1 then
 			gui.play_flipbook(node, "UI-minisub3")
 		end
+	end
+	if message_id == hash("send_depth") then
+		local depth = message.y
 	end
 end

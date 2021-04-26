@@ -1,3 +1,7 @@
+images {
+  image: "/assets/sprites/salvage1/salve2.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
 animations {
   id: "submarine"
   images {
@@ -285,9 +289,9 @@ animations {
   flip_vertical: 0
 }
 animations {
-  id: "relic"
+  id: "salvage"
   images {
-    image: "/assets/sprites/relic-1.png"
+    image: "/assets/sprites/salvage1/salve1.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   playback: PLAYBACK_LOOP_FORWARD

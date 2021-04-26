@@ -1,3 +1,6 @@
+go.property("speed", 40)
+local camera = require "orthographic.camera"
+
 function init(self)
 	msg.post(".", "acquire_input_focus")
 	msg.post(".", "acquire_camera_focus")
@@ -8,21 +11,32 @@ function init(self)
 	self.dir = vmath.vector3(1, 0, 0)
 	self.firing = false
 	self.health = 3
-	self.torpedo_count = 0
+	self.max_torpedo = 1
+	self.torpedo_count = 3
+	self.invul = false
+	self.engine_on = false
 end
 
 function final(self)
 	msg.post(".", "release_input_focus")
 end
 
+local function toggleInvul(self)
+	self.invul = not self.invul
+end
+
 function update(self, dt)
+	if self.health <= 0 then
+		print("DEAD")
+	end
+	
 	if vmath.length_sqr(self.input) > 1 then
 		self.input = vmath.normalize(self.input)
 	end
 
 	if self.firing then
-		if self.torpedo_count == 0 then
-			self.torpedo_count = 1
+		if self.max_torpedo == 1 then
+			self.max_torpedo = 0
 			local angle = math.atan2(self.dir.y, self.dir.x)
 			local rot = vmath.quat_rotation_z(angle)
 			local props = { dir = self.dir }
@@ -30,7 +44,7 @@ function update(self, dt)
 		end
 	end
 
-	local acceleration = self.input * 40
+	local acceleration = self.input * self.speed
 	
 	local dv = acceleration * dt
 	local v0 = self.velocity
@@ -45,6 +59,12 @@ function update(self, dt)
 	
 	local p = go.get_position()
 	go.set_position(p + movement)
+	
+	if vmath.length_sqr(self.velocity) > 0 and self.engine_on == false then
+		self.engine_on = true
+		sound.play("#engine", { gain = 0.1})
+	else
+	end
 
 	self.velocity = v1 * 0.995
 	self.input = vmath.vector3()
@@ -54,7 +74,25 @@ end
 
 function on_message(self, message_id, message, sender)
 	if message_id == hash("contact_point_response") then
-		if message.distance > 0 then
+		if message.other_group == hash("enemy") and self.invul == false then
+			self.input = message.normal
+			local pos = go.get_position()
+			go.set_position(pos + self.input * 30)
+			self.health = self.health - 1
+			toggleInvul(self)
+			msg.post("/scripts#sound_gate", "play_gated_sound", { soundcomponent = "/sub#damage"})
+			camera.shake(hash("/camera"), 0.01, 0.5, both)
+			timer.delay(3, false, toggleInvul)
+			msg.post("/gui#hud", "damage", { remaining = self.health})
+		end
+		if message.other_group == hash("salvage") then
+			self.health = 3
+			self.torpedo_count = 3
+			sound.play("#pickup")
+			go.delete(message.other_id)
+			msg.post("/gui#hud", "restore")
+		end
+ 		if message.distance > 0 then
 			local proj = vmath.project(self.correction, message.normal * message.distance)
 			if proj < 1 then
 				local comp = (message.distance - message.distance * proj) * message.normal
@@ -63,12 +101,12 @@ function on_message(self, message_id, message, sender)
 			end
 		end
 	end
-	if message_id == hash("damage") then
-		self.health = self.health - 1
-		print(self.health)
-	end
 	if message_id == hash("torpedo_exploded") then
-		self.torpedo_count = 0
+		self.max_torpedo = 1
+	end
+	if message_id == hash("send_coordinates") then
+		local pos = go.get_position()
+		msg.post("/gui#hud", "send_coordinates", { x = pos.x, y = pos.y })
 	end
 end
 
@@ -83,7 +121,9 @@ function on_input(self, action_id, action)
 	elseif action_id == hash("right") then
 		self.input.x = 1
 		self.dir.x = 1
-	elseif action_id == hash("fire") and action.pressed then
+	elseif action_id == hash("fire") and action.pressed and self.torpedo_count > 0 and self.max_torpedo > 0 then
 		self.firing = true
+		self.torpedo_count = self.torpedo_count - 1
+		msg.post("/gui#hud", "torpedo_fired", { remaining = self.torpedo_count})
 	end
 end

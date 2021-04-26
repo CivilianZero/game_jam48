@@ -1,0 +1,7 @@
+function init(self)
+	local message = {}
+	message.collisions = { hash("cave"),hash("bomb") }
+	message.debug = true
+	message.deleteNodeAfterGotten = false
+	msg.post("/NavGO_HandlerGO#NavGO_HandlerScript", hash("init"), message)
+end

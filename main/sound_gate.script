@@ -1,0 +1,48 @@
+local gate_time = 0.3
+
+function init(self)
+	self.gated_sounds = {}
+	self.sounds = {}
+end
+
+function update(self, dt)
+	for k,_ in pairs(self.sounds) do
+		if self.gated_sounds[k] then
+			self.gated_sounds[k] = self.gated_sounds[k] - dt
+			if self.gated_sounds[k] < 0 then
+				self.gated_sounds[k] = nil
+			end
+		end
+	end
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("play_gated_sound") then
+		if self.sounds[message.soundcomponent] == nil then
+			self.sounds[message.soundcomponent] = gate_time
+			sound.play(message.soundcomponent, { gain = message.gain })
+		else
+			print("gated " .. message.soundcomponent)
+		end
+	end
+	if message_id == hash("play_single_gated_sound") then
+		if self.sounds[message.soundcomponent] == nil then
+			self.sounds[message.soundcomponent] = true
+			sound.play(message.soundcomponent, { gain = message.gain })
+		else
+			print("already playing "..message.soundcomponent)
+		end
+	end
+	if message_id == hash("stop_sound") then
+		if self.sounds[message.soundcomponent] == nil and self.gated_sounds[message.soundcomponent] == nil then
+			print("not playing "..message.soundcomponent)
+		else
+			if self.sounds[message.soundcomponent] then
+				self.sounds[message.soundcomponent] = nil
+			else
+				self.gated_sounds[message.soundcomponent] = nil
+			end
+			sound.stop(message.soundcomponent)
+		end
+	end
+end

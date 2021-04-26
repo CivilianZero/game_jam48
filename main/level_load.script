@@ -16,7 +16,7 @@ function on_message(self, message_id, message, sender)
 		msg.post("#", "unload_level")
 		local proxy = "#intermission"
 		msg.post(proxy, "load")
-		timer.delay(10, false, function()
+		timer.delay(5, false, function()
 			msg.post("#", "next_level")
 		end)
 	elseif message_id == hash("unload_level") then

@@ -104,6 +104,10 @@ function on_message(self, message_id, message, sender)
 	if message_id == hash("torpedo_exploded") then
 		self.max_torpedo = 1
 	end
+	if message_id == hash("send_coordinates") then
+		local pos = go.get_position()
+		msg.post("/gui#hud", "send_coordinates", { x = pos.x, y = pos.y })
+	end
 end
 
 function on_input(self, action_id, action)

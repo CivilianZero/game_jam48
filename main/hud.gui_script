@@ -1,3 +1,44 @@
+local printer = require "printer.printer"
+local styles = {
+	font_height = 28,
+	spacing = 1,
+	scale = 1,
+	waving = false,
+	color = "#FFFFFF",
+	speed = 0.02,
+	appear = 0.01,
+	shaking = 0,
+	sound = false,
+	can_skip = false,
+	shake_on_write = 0,
+}
+local texts = {"Get that salvage, asshole"}
+
+local function next_print(self)
+	local text = texts[self.index]
+	local source = nil
+	self.printer:print(text, source)
+end
+
+function init(self)
+	self.printer = printer.new(self, "printer")
+	self.index = 1
+	timer.delay(0.5, false, function()
+		next_print(self)
+	end)
+end
+
+function final(self)
+	self.printer:final(self)
+end
+
+function update(self, dt)
+	self.printer:update(dt)
+	if self.printer.is_print then
+		msg.post("/sub", "send_coordinates")
+	end
+end
+
 function on_message(self, message_id, message, sender)
 	if message_id == hash("torpedo_fired") then
 		if message.remaining == 2 then
@@ -28,5 +69,12 @@ function on_message(self, message_id, message, sender)
 		elseif message.remaining == 1 then
 			gui.play_flipbook(node, "UI-minisub3")
 		end
+	end
+	if message_id == hash("send_coordinates") then
+		local node = gui.get_node("printer/prefab")
+		local position = vmath.vector3()
+		position.x = message.x + 20
+		position.y = message.y
+		gui.set_position(node, position)
 	end
 end

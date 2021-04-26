@@ -1,6 +1,6 @@
 local printer = require "printer.printer"
 local styles = {
-	font_height = 32,
+	font_height = 28,
 	spacing = 1,
 	scale = 1,
 	waving = false,
@@ -12,7 +12,7 @@ local styles = {
 	can_skip = false,
 	shake_on_write = 0,
 }
-local texts = {"Get that salvage, asshole"}
+local texts = {"{styles}Get that salvage, asshole"}
 
 local function next_print(self)
 	local text = texts[self.index]
@@ -22,6 +22,7 @@ end
 
 function init(self)
 	self.printer = printer.new(self, "printer")
+	self.printer.add_styles(styles)
 	self.index = 1
 	timer.delay(0.5, false, function()
 		next_print(self)

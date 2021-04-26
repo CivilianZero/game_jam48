@@ -107,7 +107,7 @@ embedded_components {
 embedded_components {
   id: "explosion"
   type: "sound"
-  data: "sound: \"/assets/SFX/Torpedo/Torpedo explosion1_Mono.wav\"\n"
+  data: "sound: \"/assets/SFX/Torpedo/Torpedo explosionFixedFinal_Mono.wav\"\n"
   "looping: 0\n"
   "group: \"master\"\n"
   "gain: 1.0\n"

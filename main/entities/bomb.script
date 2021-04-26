@@ -4,17 +4,17 @@ end
 
 local function explode(self)
 	msg.post("#collisionobject", "disable")
-	msg.post("#sprite", "play_animation", { id = hash("explosion") })
+	msg.post("#sprite", "play_animation", { id = hash("bomb_explosion") })
 end
 
 
 function update(self, dt)
 	local sub_pos = go.get_position("/sub")
-	local pos = go.get_position()
+	local pos = go.get_position() 
 	local dist = distance(pos, sub_pos)
 
-	if dist < 75 then
-		sprite.play_flipbook("#lockon", "salve2")
+	if dist < 40 then
+		sprite.play_flipbook("#lockon", "smallchainbomb2")
 	else
 		sprite.play_flipbook("#lockon", "empty")
 	end

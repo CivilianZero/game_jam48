@@ -7,7 +7,7 @@ function update(self, dt)
 	local pos = go.get_position()
 	local dist = distance(pos, sub_pos)
 	
-	if dist < 75 then
+	if dist < 40 then
 		sprite.play_flipbook("#lockon", "salve2")
 	else
 		sprite.play_flipbook("#lockon", "empty")

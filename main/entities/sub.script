@@ -15,6 +15,8 @@ function init(self)
 	self.torpedo_count = 3
 	self.invul = false
 	self.engine_on = false
+	self.pinged = false
+	self.pinged_cooldown = 0
 	msg.post("/gui#hud", "initial_depth", { depth = go.get_position().ys })
 end
 
@@ -29,6 +31,10 @@ end
 function update(self, dt)
 	if self.health <= 0 then
 		print("DEAD")
+	end
+
+	if self.pinged and self.pinged_cooldown > 0 then
+		self.pinged_cooldown = self.pinged_cooldown - 1
 	end
 	
 	if vmath.length_sqr(self.input) > 1 then
@@ -51,12 +57,12 @@ function update(self, dt)
 	local v0 = self.velocity
 	local v1 = self.velocity + dv
 	
-	v1.x = math.min(v1.x, 40)
-	v1.y = math.min(v1.y, 40)
-	v1.x = math.max(v1.x, -40)
-	v1.y = math.max(v1.y, -40)
+	v1.x = math.min(v1.x, 50)
+	v1.y = math.min(v1.y, 50)
+	v1.x = math.max(v1.x, -50)
+	v1.y = math.max(v1.y, -50)
 	
-	local movement = (v0 + v1) * dt * 0.5
+	local movement = (v0 + v1) * dt * 0.38
 	
 	local new_pos = go.get_position() + movement
 	go.set_position(new_pos)
@@ -109,6 +115,20 @@ function on_message(self, message_id, message, sender)
 	end
 end
 
+function sonar_ping(self)
+	self.pinged = true
+	self.pinged_cooldown = 300
+	salvage = {"/salvage1", "/salvage2", "/salvage3", "/salvage4", "/salvage5", "/salvage6"}
+	for i, v in ipairs(salvage) do
+		direction = go.get_position(v) - go.get_position()
+		local params = {
+			target = go.get_position(v),
+			timer = 180
+		}
+		factory.create("#sonarblipfactory", go.get_position() + (direction * .02), nil, params, .7)
+	end
+end
+
 function on_input(self, action_id, action)
 	if action_id == hash("up") then
 		self.input.y = 1
@@ -124,5 +144,7 @@ function on_input(self, action_id, action)
 		self.firing = true
 		self.torpedo_count = self.torpedo_count - 1
 		msg.post("/gui#hud", "torpedo_fired", { remaining = self.torpedo_count})
+	elseif action_id == hash("sonar") and action.pressed and self.pinged_cooldown < 1 then
+		sonar_ping(self)
 	end
 end

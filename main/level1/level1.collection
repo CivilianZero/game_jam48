@@ -2,9 +2,10 @@ name: "main"
 instances {
   id: "sub"
   prototype: "/main/entities/sub.go"
+  children: "depth-checker"
   position {
-    x: 897.0
-    y: 265.0
+    x: -123.0
+    y: 818.0
     z: 0.0
   }
   rotation {
@@ -93,186 +94,6 @@ instances {
   position {
     x: 452.0
     y: 370.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "grass"
-  prototype: "/main/environment/grass.go"
-  position {
-    x: 328.0
-    y: 486.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "grass_alt"
-  prototype: "/main/environment/grass_alt.go"
-  position {
-    x: 585.0
-    y: 390.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "grass1"
-  prototype: "/main/environment/grass.go"
-  position {
-    x: 310.0
-    y: 486.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "grass2"
-  prototype: "/main/environment/grass.go"
-  position {
-    x: 654.0
-    y: 453.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "grass3"
-  prototype: "/main/environment/grass.go"
-  position {
-    x: 526.0
-    y: 406.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "grass4"
-  prototype: "/main/environment/grass.go"
-  position {
-    x: 392.0
-    y: 437.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "grass5"
-  prototype: "/main/environment/grass.go"
-  position {
-    x: 567.0
-    y: 390.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "grass6"
-  prototype: "/main/environment/grass.go"
-  position {
-    x: 608.0
-    y: 452.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "grass7"
-  prototype: "/main/environment/grass.go"
-  position {
-    x: 659.0
-    y: 326.0
     z: 0.0
   }
   rotation {
@@ -615,26 +436,6 @@ instances {
       value: "10.0"
       type: PROPERTY_TYPE_NUMBER
     }
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "salvage1"
-  prototype: "/main/entities/salvage.go"
-  position {
-    x: 985.0
-    y: 228.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
   }
   scale3 {
     x: 1.0
@@ -1170,6 +971,686 @@ instances {
     z: 1.0
   }
 }
+instances {
+  id: "salvage2"
+  prototype: "/main/entities/salvage.go"
+  position {
+    x: 154.0
+    y: 707.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "salvage3"
+  prototype: "/main/entities/salvage.go"
+  position {
+    x: 558.0
+    y: 112.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "salvage4"
+  prototype: "/main/entities/salvage.go"
+  position {
+    x: 1192.0
+    y: 596.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bomb"
+  prototype: "/main/entities/bomb.go"
+  position {
+    x: 572.0
+    y: 200.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bomb1"
+  prototype: "/main/entities/bomb.go"
+  position {
+    x: 592.0
+    y: 231.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bomb2"
+  prototype: "/main/entities/bomb.go"
+  position {
+    x: 796.0
+    y: -450.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bomb3"
+  prototype: "/main/entities/bomb.go"
+  position {
+    x: 769.0
+    y: -486.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bomb4"
+  prototype: "/main/entities/bomb.go"
+  position {
+    x: 738.0
+    y: -412.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bomb5"
+  prototype: "/main/entities/bomb.go"
+  position {
+    x: 876.0
+    y: -552.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bomb6"
+  prototype: "/main/entities/bomb.go"
+  position {
+    x: 902.0
+    y: -536.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bomb7"
+  prototype: "/main/entities/bomb.go"
+  position {
+    x: 984.0
+    y: -551.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bomb8"
+  prototype: "/main/entities/bomb.go"
+  position {
+    x: 848.0
+    y: -518.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bomb9"
+  prototype: "/main/entities/bomb.go"
+  position {
+    x: 862.0
+    y: -482.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bomb10"
+  prototype: "/main/entities/bomb.go"
+  position {
+    x: 948.0
+    y: -521.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "salvage1"
+  prototype: "/main/entities/salvage.go"
+  position {
+    x: 985.0
+    y: 227.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 328.0
+    y: 486.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass1"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 310.0
+    y: 486.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass2"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 654.0
+    y: 453.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass3"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 608.0
+    y: 452.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass4"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 392.0
+    y: 437.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass5"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 567.0
+    y: 390.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass6"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 608.0
+    y: 452.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass7"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 659.0
+    y: 326.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass8"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 629.0
+    y: 452.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass9"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 521.0
+    y: 389.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass10"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 702.0
+    y: 325.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass11"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 803.0
+    y: 325.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass12"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 917.0
+    y: 229.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass13"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 868.0
+    y: 230.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass14"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 917.0
+    y: 229.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass_alt"
+  prototype: "/main/environment/grass_alt.go"
+  position {
+    x: 585.0
+    y: 390.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "salvage5"
+  prototype: "/main/entities/salvage.go"
+  position {
+    x: 106.0
+    y: 4.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "salvage6"
+  prototype: "/main/entities/salvage.go"
+  position {
+    x: 1046.0
+    y: -572.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "depth-checker"
+  prototype: "/main/entities/depth-checker.go"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
 scale_along_z: 0
 embedded_instances {
   id: "map"
@@ -1275,40 +1756,31 @@ embedded_instances {
   "    w: 1.0\n"
   "  }\n"
   "}\n"
+  "embedded_components {\n"
+  "  id: \"sprite2\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/sprites.atlas\\\"\\n"
+  "default_animation: \\\"background\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: -76.0\n"
+  "    y: -1115.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
   ""
   position {
     x: 730.0
     y: 291.0
     z: -1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "grass holder"
-  children: "grass"
-  children: "grass1"
-  children: "grass2"
-  children: "grass3"
-  children: "grass4"
-  children: "grass5"
-  children: "grass6"
-  children: "grass7"
-  children: "grass_alt"
-  data: ""
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
   }
   rotation {
     x: 0.0
@@ -1489,477 +1961,6 @@ embedded_instances {
   }
 }
 embedded_instances {
-  id: "small bombs"
-  children: "smallbomb"
-  children: "smallbomb1"
-  children: "smallbomb10"
-  children: "smallbomb11"
-  children: "smallbomb12"
-  children: "smallbomb2"
-  children: "smallbomb3"
-  children: "smallbomb4"
-  children: "smallbomb5"
-  children: "smallbomb6"
-  children: "smallbomb7"
-  data: ""
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "smallbomb"
-  data: "embedded_components {\n"
-  "  id: \"sprite\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/main/sprites.atlas\\\"\\n"
-  "default_animation: \\\"small bomb\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  ""
-  position {
-    x: 572.0
-    y: 150.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "smallbomb1"
-  data: "embedded_components {\n"
-  "  id: \"sprite\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/main/sprites.atlas\\\"\\n"
-  "default_animation: \\\"small bomb\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  ""
-  position {
-    x: 592.0
-    y: 181.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "smallbomb2"
-  data: "embedded_components {\n"
-  "  id: \"sprite\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/main/sprites.atlas\\\"\\n"
-  "default_animation: \\\"small bomb\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  ""
-  position {
-    x: 869.0
-    y: -6.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "smallbomb3"
-  data: "embedded_components {\n"
-  "  id: \"sprite\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/main/sprites.atlas\\\"\\n"
-  "default_animation: \\\"small bomb\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  ""
-  position {
-    x: 842.0
-    y: -42.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "smallbomb4"
-  data: "embedded_components {\n"
-  "  id: \"sprite\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/main/sprites.atlas\\\"\\n"
-  "default_animation: \\\"small bomb\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  ""
-  position {
-    x: 811.0
-    y: 32.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "smallbomb5"
-  data: "embedded_components {\n"
-  "  id: \"sprite\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/main/sprites.atlas\\\"\\n"
-  "default_animation: \\\"small bomb\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  ""
-  position {
-    x: 949.0
-    y: -108.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "smallbomb6"
-  data: "embedded_components {\n"
-  "  id: \"sprite\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/main/sprites.atlas\\\"\\n"
-  "default_animation: \\\"small bomb\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  ""
-  position {
-    x: 975.0
-    y: -92.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "smallbomb7"
-  data: "embedded_components {\n"
-  "  id: \"sprite\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/main/sprites.atlas\\\"\\n"
-  "default_animation: \\\"small bomb\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  ""
-  position {
-    x: 1056.0
-    y: -108.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "smallbomb10"
-  data: "embedded_components {\n"
-  "  id: \"sprite\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/main/sprites.atlas\\\"\\n"
-  "default_animation: \\\"small bomb\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  ""
-  position {
-    x: 921.0
-    y: -74.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "smallbomb11"
-  data: "embedded_components {\n"
-  "  id: \"sprite\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/main/sprites.atlas\\\"\\n"
-  "default_animation: \\\"small bomb\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  ""
-  position {
-    x: 935.0
-    y: -38.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "smallbomb12"
-  data: "embedded_components {\n"
-  "  id: \"sprite\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/main/sprites.atlas\\\"\\n"
-  "default_animation: \\\"small bomb\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  ""
-  position {
-    x: 1021.0
-    y: -77.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
   id: "map1"
   data: "components {\n"
   "  id: \"terrain 1\"\n"
@@ -2024,6 +2025,11 @@ embedded_instances {
 embedded_instances {
   id: "salvage"
   children: "salvage1"
+  children: "salvage2"
+  children: "salvage3"
+  children: "salvage4"
+  children: "salvage5"
+  children: "salvage6"
   data: ""
   position {
     x: 0.0
@@ -2044,6 +2050,7 @@ embedded_instances {
 }
 embedded_instances {
   id: "bones"
+  children: "grass holder"
   data: "embedded_components {\n"
   "  id: \"fb\"\n"
   "  type: \"sprite\"\n"
@@ -2113,6 +2120,73 @@ embedded_instances {
   children: "NavGO_directionalNodeGO16"
   children: "NavGO_directionalNodeGO17"
   children: "NavGO_directionalNodeGO18"
+  data: ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "bombs"
+  children: "bomb"
+  children: "bomb1"
+  children: "bomb10"
+  children: "bomb2"
+  children: "bomb3"
+  children: "bomb4"
+  children: "bomb5"
+  children: "bomb6"
+  children: "bomb7"
+  children: "bomb8"
+  children: "bomb9"
+  data: ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "grass holder"
+  children: "grass"
+  children: "grass1"
+  children: "grass10"
+  children: "grass11"
+  children: "grass12"
+  children: "grass13"
+  children: "grass14"
+  children: "grass2"
+  children: "grass3"
+  children: "grass4"
+  children: "grass5"
+  children: "grass6"
+  children: "grass7"
+  children: "grass8"
+  children: "grass9"
+  children: "grass_alt"
   data: ""
   position {
     x: 0.0

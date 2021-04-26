@@ -17,7 +17,7 @@ embedded_components {
   id: "sprite"
   type: "sprite"
   data: "tile_set: \"/main/sprites.atlas\"\n"
-  "default_animation: \"submarine\"\n"
+  "default_animation: \"submarine-3\"\n"
   "material: \"/builtins/materials/sprite.material\"\n"
   "blend_mode: BLEND_MODE_ALPHA\n"
   ""
@@ -80,8 +80,8 @@ embedded_components {
   "    index: 0\n"
   "    count: 3\n"
   "  }\n"
-  "  data: 9.097\n"
-  "  data: 6.283\n"
+  "  data: 7.985\n"
+  "  data: 5.066\n"
   "  data: 10.0\n"
   "}\n"
   "linear_damping: 50.0\n"
@@ -92,26 +92,6 @@ embedded_components {
     x: 0.0
     y: 0.0
     z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-}
-embedded_components {
-  id: "vision_cone"
-  type: "sprite"
-  data: "tile_set: \"/main/sprites.atlas\"\n"
-  "default_animation: \"vision cone\"\n"
-  "material: \"/builtins/materials/sprite.material\"\n"
-  "blend_mode: BLEND_MODE_ALPHA\n"
-  ""
-  position {
-    x: 4.0
-    y: -7.0
-    z: 1.0
   }
   rotation {
     x: 0.0
@@ -176,6 +156,24 @@ embedded_components {
   "pan: 0.0\n"
   "speed: 1.0\n"
   "loopcount: 0\n"
+  ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+}
+embedded_components {
+  id: "sonarblipfactory"
+  type: "factory"
+  data: "prototype: \"/main/entities/blip.go\"\n"
+  "load_dynamically: false\n"
   ""
   position {
     x: 0.0

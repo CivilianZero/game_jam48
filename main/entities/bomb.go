@@ -23,7 +23,7 @@ embedded_components {
   ""
   position {
     x: 0.0
-    y: 0.0
+    y: -50.0
     z: 0.0
   }
   rotation {
@@ -48,7 +48,7 @@ embedded_components {
   "    shape_type: TYPE_SPHERE\n"
   "    position {\n"
   "      x: 0.0\n"
-  "      y: 52.0\n"
+  "      y: 2.0\n"
   "      z: 0.0\n"
   "    }\n"
   "    rotation {\n"
@@ -88,7 +88,7 @@ embedded_components {
   ""
   position {
     x: 0.0
-    y: 52.0
+    y: -50.0
     z: 0.0
   }
   rotation {

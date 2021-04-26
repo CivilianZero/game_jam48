@@ -6,6 +6,10 @@ images {
   image: "/assets/sprites/empty.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
+images {
+  image: "/assets/sprites/small chainbomb/smallchainbomb2.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
 animations {
   id: "submarine"
   images {
@@ -417,6 +421,203 @@ animations {
   id: "forward bones"
   images {
     image: "/assets/sprites/forward bones.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 60
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "blip"
+  images {
+    image: "/assets/sprites/blip/blip1.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/blip/blip2.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/blip/blip3.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/blip/blip4.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/blip/blip5.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/blip/blip6.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/blip/blip7.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 3
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "bomb_explosion"
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)1.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)2.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)3.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)4.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)5.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)6.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)7.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)8.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)9.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)10.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)11.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)12.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)13.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)14.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)15.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)16.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)17.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)18.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)19.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)20.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)21.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)22.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)23.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)24.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)25.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)26.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)27.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)28.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)29.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)30.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)31.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)32.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)33.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)34.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)35.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  images {
+    image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)36.png"
+    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+  }
+  playback: PLAYBACK_LOOP_FORWARD
+  fps: 13
+  flip_horizontal: 0
+  flip_vertical: 0
+}
+animations {
+  id: "submarine-3"
+  images {
+    image: "/assets/sprites/cooler-sub-2.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   playback: PLAYBACK_LOOP_FORWARD

@@ -42,6 +42,9 @@ function update(self, dt)
 	if self.pinged and self.pinged_cooldown > 0 then
 		self.pinged_cooldown = self.pinged_cooldown - 1
 	end
+	if self.pinged_cooldown == 20 then
+		sound.stop("#sonar")
+	end
 	
 	if vmath.length_sqr(self.input) > 1 then
 		self.input = vmath.normalize(self.input)
@@ -129,6 +132,7 @@ function on_message(self, message_id, message, sender)
 end
 
 function sonar_ping(self)
+	sound.play("#sonar")
 	self.pinged = true
 	self.pinged_cooldown = 260
 	for i, v in ipairs(salvage) do

@@ -4,9 +4,9 @@ instances {
   prototype: "/main/entities/sub.go"
   children: "depth-checker"
   position {
-    x: 459.0
-    y: 580.0
-    z: 1.0
+    x: 456.0
+    y: 582.0
+    z: 0.0
   }
   rotation {
     x: 0.0
@@ -3238,7 +3238,7 @@ embedded_instances {
   "  position {\n"
   "    x: 1298.0\n"
   "    y: 605.0\n"
-  "    z: 2.0\n"
+  "    z: 1.1\n"
   "  }\n"
   "  rotation {\n"
   "    x: 0.0\n"
@@ -3278,7 +3278,7 @@ embedded_instances {
   "  position {\n"
   "    x: 1039.0\n"
   "    y: -36.0\n"
-  "    z: 2.0\n"
+  "    z: 1.1\n"
   "  }\n"
   "  rotation {\n"
   "    x: 0.0\n"
@@ -3318,7 +3318,7 @@ embedded_instances {
   "  position {\n"
   "    x: 528.0\n"
   "    y: 595.0\n"
-  "    z: 2.0\n"
+  "    z: 1.1\n"
   "  }\n"
   "  rotation {\n"
   "    x: 0.0\n"
@@ -3358,7 +3358,7 @@ embedded_instances {
   "  position {\n"
   "    x: 784.0\n"
   "    y: 603.0\n"
-  "    z: 2.0\n"
+  "    z: 1.1\n"
   "  }\n"
   "  rotation {\n"
   "    x: 0.0\n"
@@ -3418,7 +3418,7 @@ embedded_instances {
   "  position {\n"
   "    x: 1677.0\n"
   "    y: 858.0\n"
-  "    z: 2.0\n"
+  "    z: 1.1\n"
   "  }\n"
   "  rotation {\n"
   "    x: 0.0\n"
@@ -3458,7 +3458,7 @@ embedded_instances {
   "  position {\n"
   "    x: 2189.0\n"
   "    y: 858.0\n"
-  "    z: 2.0\n"
+  "    z: 1.1\n"
   "  }\n"
   "  rotation {\n"
   "    x: 0.0\n"
@@ -3498,7 +3498,7 @@ embedded_instances {
   "  position {\n"
   "    x: 2701.0\n"
   "    y: 858.0\n"
-  "    z: 2.0\n"
+  "    z: 1.1\n"
   "  }\n"
   "  rotation {\n"
   "    x: 0.0\n"
@@ -3538,7 +3538,7 @@ embedded_instances {
   "  position {\n"
   "    x: 3213.0\n"
   "    y: 858.0\n"
-  "    z: 2.0\n"
+  "    z: 1.1\n"
   "  }\n"
   "  rotation {\n"
   "    x: 0.0\n"
@@ -3578,7 +3578,7 @@ embedded_instances {
   "  position {\n"
   "    x: 1171.0\n"
   "    y: 985.0\n"
-  "    z: 2.0\n"
+  "    z: 1.1\n"
   "  }\n"
   "  rotation {\n"
   "    x: 0.0\n"
@@ -3598,7 +3598,7 @@ embedded_instances {
   "  position {\n"
   "    x: 1298.0\n"
   "    y: 605.0\n"
-  "    z: 2.0\n"
+  "    z: 1.1\n"
   "  }\n"
   "  rotation {\n"
   "    x: 0.0\n"

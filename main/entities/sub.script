@@ -97,7 +97,7 @@ function on_message(self, message_id, message, sender)
 		if message.other_group == hash("enemy") and self.invul == false then
 			self.input = message.normal
 			local pos = go.get_position()
-			go.set_position(pos + self.input * 30)
+			go.set_position(pos + self.input * 20)
 			self.health = self.health - 1
 			toggleInvul(self)
 			msg.post("/scripts#sound_gate", "play_gated_sound", { soundcomponent = "/sub#damage"})

@@ -3,8 +3,8 @@ instances {
   id: "sub"
   prototype: "/main/entities/sub.go"
   position {
-    x: 881.0
-    y: 327.0
+    x: 897.0
+    y: 265.0
     z: 0.0
   }
   rotation {
@@ -643,7 +643,6 @@ instances {
   }
 }
 instances {
-<<<<<<< HEAD
   id: "NavGO_directionalNodeGO3"
   prototype: "/navGo_pathfinding/directionalNode/NavGO_directionalNodeGO.go"
   position {
@@ -781,13 +780,6 @@ instances {
   position {
     x: 312.0
     y: -163.0
-=======
-  id: "bomb"
-  prototype: "/main/entities/bomb.go"
-  position {
-    x: 811.0
-    y: 31.0
->>>>>>> 3753cf4a5a23d416dd6230032e832ebb15a8db35
     z: 0.0
   }
   rotation {
@@ -796,7 +788,6 @@ instances {
     z: 0.0
     w: 1.0
   }
-<<<<<<< HEAD
   component_properties {
     id: "NavGo_directionalScript"
     properties {
@@ -1176,11 +1167,6 @@ instances {
   scale3 {
     x: 0.5
     y: 0.5
-=======
-  scale3 {
-    x: 1.0
-    y: 1.0
->>>>>>> 3753cf4a5a23d416dd6230032e832ebb15a8db35
     z: 1.0
   }
 }
@@ -1504,7 +1490,6 @@ embedded_instances {
 }
 embedded_instances {
   id: "small bombs"
-  children: "bomb"
   children: "smallbomb"
   children: "smallbomb1"
   children: "smallbomb10"
@@ -1512,6 +1497,7 @@ embedded_instances {
   children: "smallbomb12"
   children: "smallbomb2"
   children: "smallbomb3"
+  children: "smallbomb4"
   children: "smallbomb5"
   children: "smallbomb6"
   children: "smallbomb7"
@@ -1679,6 +1665,46 @@ embedded_instances {
   position {
     x: 842.0
     y: -42.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "smallbomb4"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/sprites.atlas\\\"\\n"
+  "default_animation: \\\"small bomb\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 811.0
+    y: 32.0
     z: 0.0
   }
   rotation {

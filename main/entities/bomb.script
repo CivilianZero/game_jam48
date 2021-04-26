@@ -1,5 +1,6 @@
 function init(self)
 	self.locked = false
+	self.exploding = false
 end
 
 local function distance(vec1, vec2)
@@ -7,6 +8,7 @@ local function distance(vec1, vec2)
 end
 
 local function explode(self)
+	self.exploding = true
 	msg.post("#collisionobject", "disable")
 	sprite.play_flipbook("#sprite", "bomb_explosion")
 end
@@ -17,7 +19,7 @@ function update(self, dt)
 	local pos = go.get_position() 
 	local dist = distance(pos, sub_pos)
 
-	if dist < 40 then
+	if dist < 40 and not self.exploding then
 		if self.locked == false then
 			sound.play("#bloop")
 		end
@@ -37,6 +39,9 @@ function on_message(self, message_id, message, sender)
 		print("collided with"..message.other_id)
 		if message.other_id == hash("/sub") then
 			msg.post("sub", "damage")
+			explode(self)
+		end
+		if message.other_group == hash("torpedo") then
 			explode(self)
 		end
 	end

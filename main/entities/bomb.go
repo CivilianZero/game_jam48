@@ -23,6 +23,7 @@ embedded_components {
   "restitution: 0.5\n"
   "group: \"enemy\"\n"
   "mask: \"sub\"\n"
+  "mask: \"torpedo\"\n"
   "embedded_collision_shape {\n"
   "  shapes {\n"
   "    shape_type: TYPE_SPHERE\n"
@@ -68,7 +69,7 @@ embedded_components {
   ""
   position {
     x: 0.0
-    y: 0.0
+    y: -50.0
     z: 0.0
   }
   rotation {

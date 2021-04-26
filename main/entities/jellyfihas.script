@@ -1,5 +1,7 @@
 function init(self)
 	self.locked = false
+	self.timer = 100
+	self.dying = false
 end
 
 local function distance(vec1, vec2)
@@ -21,6 +23,14 @@ function update(self, dt)
 		sprite.play_flipbook("#lockon", "empty")
 		self.locked = false
 	end
+	if self.dying then
+		if self.timer == 0 then
+			go.delete()
+		end
+		self.timer = self.timer - 2
+		go.set("#sprite", "tint.w", 0.01 * self.timer)
+	end
+	
 end
 
 function on_message(self, message_id, message, sender)
@@ -31,6 +41,9 @@ function on_message(self, message_id, message, sender)
 		print("collided with"..message.other_id)
 		if message.other_id == hash("/sub") then
 			msg.post("sub", "damage")
+		end
+		if message.other_group == hash("torpedo") then
+			self.dying = true
 		end
 	end
 end

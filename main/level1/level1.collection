@@ -4,8 +4,8 @@ instances {
   prototype: "/main/entities/sub.go"
   children: "depth-checker"
   position {
-    x: -123.0
-    y: 818.0
+    x: 902.0
+    y: 382.0
     z: 0.0
   }
   rotation {

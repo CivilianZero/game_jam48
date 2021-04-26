@@ -1,3 +1,7 @@
+function init(self)
+	self.locked = false
+end
+
 local function distance(vec1, vec2)
 	return math.ceil( math.sqrt( math.pow(vec1.x - vec2.x, 2) + math.pow(vec1.y - vec2.y, 2) ) )
 end
@@ -8,9 +12,14 @@ function update(self, dt)
 	local dist = distance(pos, sub_pos)
 
 	if dist < 40 then
+		if self.locked == false then
+			sound.play("#bloop")
+		end
 		sprite.play_flipbook("#lockon", "dire-jellfish2")
+		self.locked = true
 	else
 		sprite.play_flipbook("#lockon", "empty")
+		self.locked = false
 	end
 end
 

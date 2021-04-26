@@ -40,3 +40,6 @@ max_tile_count = 30000
 [sprite]
 max_count = 256
 
+[sound]
+max_component_count = 64
+

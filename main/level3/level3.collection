@@ -1,5 +1,366 @@
-name: "default"
+name: "level2"
+instances {
+  id: "sub"
+  prototype: "/main/entities/sub.go"
+  children: "depth-checker"
+  position {
+    x: 294.0
+    y: 445.0
+    z: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "camera"
+  prototype: "/orthographic/camera.go"
+  position {
+    x: 469.0
+    y: 379.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  component_properties {
+    id: "script"
+    properties {
+      id: "zoom"
+      value: "4.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "projection"
+      value: "FIXED_AUTO"
+      type: PROPERTY_TYPE_HASH
+    }
+    properties {
+      id: "offset_gui"
+      value: "true"
+      type: PROPERTY_TYPE_BOOLEAN
+    }
+    properties {
+      id: "follow"
+      value: "true"
+      type: PROPERTY_TYPE_BOOLEAN
+    }
+    properties {
+      id: "follow_target"
+      value: "/sub"
+      type: PROPERTY_TYPE_HASH
+    }
+    properties {
+      id: "deadzone_left"
+      value: "30.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "deadzone_bottom"
+      value: "25.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "deadzone_right"
+      value: "50.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "deadzone_top"
+      value: "25.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "depth-checker"
+  prototype: "/main/entities/depth-checker.go"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "salvage1"
+  prototype: "/main/entities/salvage.go"
+  position {
+    x: 760.0
+    y: 402.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "salvage2"
+  prototype: "/main/entities/salvage.go"
+  position {
+    x: 300.0
+    y: 274.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "salvage3"
+  prototype: "/main/entities/salvage.go"
+  position {
+    x: 594.0
+    y: 274.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "salvage4"
+  prototype: "/main/entities/salvage.go"
+  position {
+    x: 339.0
+    y: 146.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "salvage5"
+  prototype: "/main/entities/salvage.go"
+  position {
+    x: 769.0
+    y: 146.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "salvage6"
+  prototype: "/main/entities/salvage.go"
+  position {
+    x: 547.0
+    y: 145.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
 scale_along_z: 0
+embedded_instances {
+  id: "map"
+  data: "components {\n"
+  "  id: \"terrain 3\"\n"
+  "  component: \"/main/level3/level3.tilemap\"\n"
+  "  position {\n"
+  "    x: 155.0\n"
+  "    y: 306.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"collisionobject3\"\n"
+  "  type: \"collisionobject\"\n"
+  "  data: \"collision_shape: \\\"/main/level3/level3.tilemap\\\"\\n"
+  "type: COLLISION_OBJECT_TYPE_STATIC\\n"
+  "mass: 0.0\\n"
+  "friction: 0.1\\n"
+  "restitution: 0.5\\n"
+  "group: \\\"\\\"\\n"
+  "mask: \\\"sub\\\"\\n"
+  "mask: \\\"torpedo\\\"\\n"
+  "linear_damping: 0.0\\n"
+  "angular_damping: 0.0\\n"
+  "locked_rotation: true\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: -1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "gui"
+  data: "components {\n"
+  "  id: \"hud\"\n"
+  "  component: \"/main/hud.gui\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "main"
+  data: "components {\n"
+  "  id: \"main\"\n"
+  "  component: \"/main/level.script\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
 embedded_instances {
   id: "scripts"
   data: "components {\n"
@@ -33,6 +394,232 @@ embedded_instances {
   "  }\n"
   "}\n"
   ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "bg"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/sprites.atlas\\\"\\n"
+  "default_animation: \\\"background3\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 344.0\n"
+  "    y: 378.0\n"
+  "    z: -1.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sprite1\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/sprites.atlas\\\"\\n"
+  "default_animation: \\\"background3\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 344.0\n"
+  "    y: 378.0\n"
+  "    z: -1.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sprite2\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/sprites.atlas\\\"\\n"
+  "default_animation: \\\"background3\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 596.0\n"
+  "    y: 546.0\n"
+  "    z: -1.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sprite3\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/sprites.atlas\\\"\\n"
+  "default_animation: \\\"background3\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 594.0\n"
+  "    y: 292.0\n"
+  "    z: -1.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sprite4\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/sprites.atlas\\\"\\n"
+  "default_animation: \\\"background3\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 341.0\n"
+  "    y: 121.0\n"
+  "    z: -1.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sprite5\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/sprites.atlas\\\"\\n"
+  "default_animation: \\\"background3\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 596.0\n"
+  "    y: 36.0\n"
+  "    z: -1.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sprite6\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/sprites.atlas\\\"\\n"
+  "default_animation: \\\"background3\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 848.0\n"
+  "    y: 292.0\n"
+  "    z: -1.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sprite7\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/sprites.atlas\\\"\\n"
+  "default_animation: \\\"background3\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 851.0\n"
+  "    y: 532.0\n"
+  "    z: -1.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sprite8\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/sprites.atlas\\\"\\n"
+  "default_animation: \\\"background3\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 849.0\n"
+  "    y: 38.0\n"
+  "    z: -1.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "salvage"
+  children: "salvage1"
+  children: "salvage2"
+  children: "salvage3"
+  children: "salvage4"
+  children: "salvage5"
+  children: "salvage6"
+  data: ""
   position {
     x: 0.0
     y: 0.0

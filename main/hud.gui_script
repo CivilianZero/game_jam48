@@ -2,6 +2,8 @@ local printer = require "printer.printer"
 local styles = {
 	standard = {
 		scale = .8,
+		sound = "typing",
+		speed = .2
 	}
 }
 local texts = {"{standard}Salvage detected within the cave system.", 
@@ -19,7 +21,7 @@ local salvage_level_2 = {"Blood. Blood in the water...",
 "Crystalline formations. Formed over Skeletons.",
 "Fossils of Unknown Specimens. Science Vessel."}
 local salvage_level_3 = {"The Holy.",
-"The Vessel: Empty. Or The Vessel. Empty."
+"The Vessel: Empty. Or The Vessel. Empty.",
 "A Void of Effervescence",
 "A Seal on a Hole in the World",
 "Tissue formed from Steel",
@@ -39,6 +41,9 @@ function init(self)
 	timer.delay(0.5, false, function()
 		next_print(self)
 	end)
+	printer.play_sound = function(name)
+		msg.post("scripts#sound_gate", "play_gated_sound", { soundcomponent = "sounds#" .. name})
+	end
 end
 
 function final(self)

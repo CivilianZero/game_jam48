@@ -82,6 +82,9 @@ function on_message(self, message_id, message, sender)
 		if depth < self.current_depth - 9 then
 			gui.set_text(text_node, "00"..text + 1)
 			self.current_depth = depth
+		elseif depth > self.current_depth + 9 then
+			gui.set_text(text_node, "00"..text-1)
+			self.current_depth = depth
 		end
 	end
 end

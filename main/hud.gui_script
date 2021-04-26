@@ -2,6 +2,8 @@ local printer = require "printer.printer"
 local styles = {
 	standard = {
 		scale = .8,
+		sound = "typing",
+		speed = .2
 	}
 }
 local texts = {"{standard}Salvage detected within the cave system.", 
@@ -39,6 +41,9 @@ function init(self)
 	timer.delay(0.5, false, function()
 		next_print(self)
 	end)
+	printer.play_sound = function(name)
+		msg.post("scripts#sound_gate", "play_gated_sound", { soundcomponent = "sounds#" .. name})
+	end
 end
 
 function final(self)

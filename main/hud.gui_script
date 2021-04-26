@@ -27,21 +27,11 @@ salvage_level_3 = {"{standard}The Holy.",
 "{standard}Tissue formed from Steel",
 "{standard}The Final Step"}
 
-local function next_print(self)
-	local text = texts[self.index]
-	local source = nil
-	self.printer:print(text)
-	self.index = self.index + 1
-end
-
 function init(self)
 	self.printer = printer.new(self, "printer")
 	printer.add_styles(styles)
 	self.index = 1
 	self.current_depth = 0
-	timer.delay(0.5, false, function()
-		next_print(self)
-	end)
 	printer.play_sound = function(name)
 		sound.play("main:/sounds#" .. name)
 	end
@@ -53,9 +43,6 @@ end
 
 function update(self, dt)
 	self.printer:update(dt)
-	-- if not self.printer.is_print then
-	-- 	
-	-- end
 end
 
 function on_message(self, message_id, message, sender)
@@ -108,5 +95,11 @@ function on_message(self, message_id, message, sender)
 		local level = "salvage_level_"..message.level
 		local index = tonumber(message.salvage_number)
 		self.printer:print(_G[level][index])
+	end
+	if message_id == hash("open_text") then
+		local index = tonumber(message.level)
+		timer.delay(0.5, false, function()
+			self.printer:print(texts[index])
+		end)
 	end
 end

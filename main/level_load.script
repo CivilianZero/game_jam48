@@ -13,12 +13,16 @@ function on_message(self, message_id, message, sender)
 		msg.post("#", "unload_intermission")
 		msg.post("#", "load_level", { level = self.current_level + 1 })
 	elseif message_id == hash("intermission") then
-		msg.post("#", "unload_level")
-		local proxy = "#intermission"
-		msg.post(proxy, "load")
-		timer.delay(5, false, function()
-			msg.post("#", "next_level")
-		end)
+		if current_level == 3 then
+			msg.post("#", "unload_level")
+			msg.post("#", "load_end")
+		else
+			local proxy = "#intermission"
+			msg.post(proxy, "load")
+			timer.delay(5, false, function()
+				msg.post("#", "next_level")
+			end)
+		end
 	elseif message_id == hash("unload_level") then
 		local proxy = "#proxy_level_" .. self.current_level
 		msg.post(proxy, "disable")
@@ -32,6 +36,9 @@ function on_message(self, message_id, message, sender)
 	elseif message_id == hash("proxy_loaded") then
 		msg.post(sender, "init")
 		msg.post(sender, "enable")
+	elseif message_id == hash("load_end") then
+		local proxy = "#ending"
+		msg.post(proxy, "load")
 	end
 	if message_id == hash("get_current_level") then
 		msg.post(sender, "change_level", { level = self.current_level })

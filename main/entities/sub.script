@@ -25,6 +25,7 @@ function init(self)
 	self.salvage_collected = 0
 	msg.post("/gui#hud", "initial_depth", { depth = go.get_position().ys })
 	msg.post("main:/loader#level_load", "get_current_level")
+	msg.post("/gui#hud", "open_text", { level = self.current_level })
 end
 
 function final(self)
@@ -39,7 +40,7 @@ function update(self, dt)
 	if self.health <= 0 then
 		print("DEAD")
 	end
-	if self.salvage_collected == 5 then
+	if self.salvage_collected == 1 then
 		msg.post("main:/loader#level_load", "intermission")
 	end
 	if self.pinged and self.pinged_cooldown < 1000 then

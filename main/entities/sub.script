@@ -130,12 +130,12 @@ end
 
 function sonar_ping(self)
 	self.pinged = true
-	self.pinged_cooldown = 300
+	self.pinged_cooldown = 260
 	for i, v in ipairs(salvage) do
 		direction = go.get_position(v) - go.get_position()
 		local params = {
 			target = go.get_position(v),
-			timer = 180
+			timer = 260
 		}
 		factory.create("#sonarblipfactory", go.get_position() + (direction * .02), nil, params, .7)
 	end

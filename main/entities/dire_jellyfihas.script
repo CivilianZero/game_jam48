@@ -8,17 +8,29 @@ end
 
 function update(self, dt)
 	local sub_pos = go.get_position("/sub")
-	local pos = go.get_position()
+	local pos = go.get_position() 
 	local dist = distance(pos, sub_pos)
 
 	if dist < 40 then
 		if self.locked == false then
 			sound.play("#bloop")
 		end
-		sprite.play_flipbook("#lockon", "salve2")
+		sprite.play_flipbook("#lockon", "dire-jellfish2")
 		self.locked = true
 	else
 		sprite.play_flipbook("#lockon", "empty")
 		self.locked = false
+	end
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("animation_done") then
+		go.delete()
+	end
+	if message_id == hash("collision_response") then
+		print("collided with"..message.other_id)
+		if message.other_id == hash("/sub") then
+			msg.post("sub", "damage")
+		end
 	end
 end

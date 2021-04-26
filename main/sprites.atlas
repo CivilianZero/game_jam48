@@ -10,6 +10,14 @@ images {
   image: "/assets/sprites/small chainbomb/smallchainbomb2.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
+images {
+  image: "/assets/sprites/jellfish/jellyfish13.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/assets/sprites/dire-jellyfish/dire-jellfish2.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
 animations {
   id: "submarine"
   images {

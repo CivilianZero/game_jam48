@@ -1,23 +1,19 @@
 local printer = require "printer.printer"
 local styles = {
-	font_height = 28,
-	spacing = 1,
-	scale = 1,
-	waving = false,
-	color = "#FFFFFF",
-	speed = 0.02,
-	appear = 0.01,
-	shaking = 0,
-	sound = false,
-	can_skip = false,
-	shake_on_write = 0,
+	standard = {
+		scale = .8,
+	},
+	shaky = {
+		scale = .8,
+		shaking = 2
+	}
 }
-local texts = {"{styles}Get that salvage, asshole"}
+local texts = {"{standard}Get that salvage, asshole"}
 
 local function next_print(self)
 	local text = texts[self.index]
 	local source = nil
-	self.printer:print(text, source)
+	self.printer:print(text)
 end
 
 function init(self)

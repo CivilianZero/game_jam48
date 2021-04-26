@@ -2709,6 +2709,26 @@ instances {
     z: 1.0
   }
 }
+instances {
+  id: "salvage6"
+  prototype: "/main/entities/salvage.go"
+  position {
+    x: 1336.0
+    y: 390.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
 scale_along_z: 0
 embedded_instances {
   id: "map"
@@ -2874,6 +2894,7 @@ embedded_instances {
   children: "salvage3"
   children: "salvage4"
   children: "salvage5"
+  children: "salvage6"
   data: ""
   position {
     x: 0.0
@@ -3035,7 +3056,6 @@ embedded_instances {
 }
 embedded_instances {
   id: "bigjelleys"
-  children: "backgrounds"
   children: "dire_jellyfihas"
   children: "dire_jellyfihas1"
   children: "dire_jellyfihas10"
@@ -3120,6 +3140,54 @@ embedded_instances {
   "  }\n"
   "}\n"
   ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "grass holder"
+  children: "grass"
+  children: "grass1"
+  children: "grass10"
+  children: "grass11"
+  children: "grass12"
+  children: "grass13"
+  children: "grass14"
+  children: "grass15"
+  children: "grass16"
+  children: "grass17"
+  children: "grass18"
+  children: "grass19"
+  children: "grass2"
+  children: "grass20"
+  children: "grass21"
+  children: "grass22"
+  children: "grass23"
+  children: "grass24"
+  children: "grass25"
+  children: "grass26"
+  children: "grass27"
+  children: "grass3"
+  children: "grass4"
+  children: "grass5"
+  children: "grass6"
+  children: "grass7"
+  children: "grass8"
+  children: "grass9"
+  data: ""
   position {
     x: 0.0
     y: 0.0
@@ -3519,59 +3587,71 @@ embedded_instances {
   "    w: 1.0\n"
   "  }\n"
   "}\n"
+  "embedded_components {\n"
+  "  id: \"01fg1\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/level2/backgrounds.atlas\\\"\\n"
+  "default_animation: \\\"02-01-fg\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 1298.0\n"
+  "    y: 605.0\n"
+  "    z: 2.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"01bg1\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/level2/backgrounds.atlas\\\"\\n"
+  "default_animation: \\\"02-01-bg\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 1293.0\n"
+  "    y: 380.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"01bg2\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/level2/backgrounds.atlas\\\"\\n"
+  "default_animation: \\\"02-01-bg\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 1539.0\n"
+  "    y: 390.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
   ""
   position {
     x: 0.0
     y: 0.0
     z: -1.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "grass holder"
-  children: "grass"
-  children: "grass1"
-  children: "grass10"
-  children: "grass11"
-  children: "grass12"
-  children: "grass13"
-  children: "grass14"
-  children: "grass15"
-  children: "grass16"
-  children: "grass17"
-  children: "grass18"
-  children: "grass19"
-  children: "grass2"
-  children: "grass20"
-  children: "grass21"
-  children: "grass22"
-  children: "grass23"
-  children: "grass24"
-  children: "grass25"
-  children: "grass26"
-  children: "grass27"
-  children: "grass3"
-  children: "grass4"
-  children: "grass5"
-  children: "grass6"
-  children: "grass7"
-  children: "grass8"
-  children: "grass9"
-  data: ""
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
   }
   rotation {
     x: 0.0

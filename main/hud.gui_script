@@ -2,13 +2,23 @@ local printer = require "printer.printer"
 local styles = {
 	standard = {
 		scale = .8,
-	},
-	shaky = {
-		scale = .8,
-		shaking = 2
 	}
 }
-local texts = {"{standard}Get that salvage, asshole"}
+local texts = {"{standard}Salvage detected within the cave system.", 
+"{standard}More signals detected.",
+"{standard}"}
+local salvage_level_1 = {"Destroyer wreckage, decades old. Highly corroded.",
+"Remnants of frigate hull cuttings.",
+"Discarded munitions. Still of use.",
+"Lost research equipment. Study subjects unknown.",
+"Shell casings. Relatively recent. Origin unknown."}
+local salvage_level_2 = {"Blood. Blood in the water...",
+"Brass and Steel plates. Engineering vessel.",
+"Impossible metal shapes. Filled with holess.",
+"Wood and Wine. Shipwreck.",
+"Crystalline formations. Formed over Skeletons.",
+"Fossils of Unknown Specimens. Science Vessel."}
+local salvage_level_3 = {"The Holy.","","","","","",}
 
 local function next_print(self)
 	local text = texts[self.index]
@@ -82,5 +92,10 @@ function on_message(self, message_id, message, sender)
 			gui.set_text(text_node, "00"..text-1)
 			self.current_depth = depth
 		end
+	end
+	if message_id == hash("salvage_text") then
+		local level = "salvage_level_"..message.level
+		local index = message.salvage_number
+		self.printer:print(level[index])
 	end
 end

@@ -37,7 +37,7 @@ function update(self, dt)
 		print("DEAD")
 	end
 	if self.salvage_collected == 5 then
-		msg.post("/loader#level_load", "load_level", { level = 2 })
+		msg.post("/loader#level_load", "intermission")
 	end
 	if self.pinged and self.pinged_cooldown > 0 then
 		self.pinged_cooldown = self.pinged_cooldown - 1

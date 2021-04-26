@@ -39,7 +39,7 @@ function on_message(self, message_id, message, sender)
 	end
 	if message_id == hash("collision_response") then
 		print("collided with"..message.other_id)
-		if message.other_id == hash("/sub") then
+		if message.other_id == hash("/sub") and not self.dying then
 			msg.post("sub", "damage")
 		end
 		if message.other_group == hash("torpedo") then

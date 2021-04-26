@@ -4,8 +4,8 @@ instances {
   prototype: "/main/entities/sub.go"
   children: "depth-checker"
   position {
-    x: 458.0
-    y: 574.0
+    x: 459.0
+    y: 580.0
     z: 1.0
   }
   rotation {
@@ -412,8 +412,8 @@ instances {
   id: "jellyfihas3"
   prototype: "/main/entities/jellyfihas.go"
   position {
-    x: 1017.0
-    y: 402.0
+    x: 968.0
+    y: 420.0
     z: 0.0
   }
   rotation {
@@ -831,6 +831,7 @@ instances {
 instances {
   id: "jellyfihas24"
   prototype: "/main/entities/jellyfihas.go"
+  children: "dire_jellyfihas11"
   position {
     x: 1725.0
     y: 932.0
@@ -1248,6 +1249,1526 @@ instances {
     z: 1.0
   }
 }
+instances {
+  id: "jellyfihas35"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 1202.0
+    y: 924.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas36"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 1175.0
+    y: 846.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas37"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 1215.0
+    y: 827.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "dire_jellyfihas8"
+  prototype: "/main/entities/dire_jellyfihas.go"
+  position {
+    x: 1264.0
+    y: 905.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "dire_jellyfihas9"
+  prototype: "/main/entities/dire_jellyfihas.go"
+  position {
+    x: 1264.0
+    y: 905.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "dire_jellyfihas10"
+  prototype: "/main/entities/dire_jellyfihas.go"
+  position {
+    x: 1365.0
+    y: 798.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "dire_jellyfihas11"
+  prototype: "/main/entities/dire_jellyfihas.go"
+  position {
+    x: 1264.0
+    y: 905.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas38"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 1880.0
+    y: 889.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas39"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 1905.0
+    y: 898.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas40"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 1945.0
+    y: 881.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas41"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 1880.0
+    y: 889.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas42"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 1905.0
+    y: 898.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas43"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 1997.0
+    y: 713.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas44"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 2037.0
+    y: 696.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas45"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 1972.0
+    y: 704.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas46"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 1997.0
+    y: 713.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas47"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 2279.0
+    y: 822.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas48"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 2319.0
+    y: 805.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas49"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 2254.0
+    y: 813.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas50"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 2279.0
+    y: 822.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas51"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 2290.0
+    y: 854.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas52"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 2390.0
+    y: 747.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas53"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 2415.0
+    y: 756.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas54"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 2426.0
+    y: 788.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas55"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 2543.0
+    y: 874.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas56"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 2568.0
+    y: 883.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas57"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 2579.0
+    y: 915.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas58"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 2912.0
+    y: 961.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas59"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 2937.0
+    y: 970.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas60"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 2948.0
+    y: 1002.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas61"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 2816.0
+    y: 996.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas62"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 2841.0
+    y: 1005.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas63"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 2852.0
+    y: 1037.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas64"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 2885.0
+    y: 860.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "dire_jellyfihas12"
+  prototype: "/main/entities/dire_jellyfihas.go"
+  position {
+    x: 2814.0
+    y: 786.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "dire_jellyfihas13"
+  prototype: "/main/entities/dire_jellyfihas.go"
+  position {
+    x: 3004.0
+    y: 901.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "dire_jellyfihas14"
+  prototype: "/main/entities/dire_jellyfihas.go"
+  position {
+    x: 2445.0
+    y: 971.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "dire_jellyfihas15"
+  prototype: "/main/entities/dire_jellyfihas.go"
+  position {
+    x: 2373.0
+    y: 798.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "dire_jellyfihas16"
+  prototype: "/main/entities/dire_jellyfihas.go"
+  position {
+    x: 2445.0
+    y: 971.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "dire_jellyfihas17"
+  prototype: "/main/entities/dire_jellyfihas.go"
+  position {
+    x: 1009.0
+    y: 347.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "dire_jellyfihas18"
+  prototype: "/main/entities/dire_jellyfihas.go"
+  position {
+    x: 985.0
+    y: 227.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas65"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 950.0
+    y: 105.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas66"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 954.0
+    y: 136.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas67"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 986.0
+    y: 467.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas68"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 985.0
+    y: 411.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas69"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 985.0
+    y: 411.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "dire_jellyfihas19"
+  prototype: "/main/entities/dire_jellyfihas.go"
+  position {
+    x: 967.0
+    y: 389.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "jellyfihas70"
+  prototype: "/main/entities/jellyfihas.go"
+  position {
+    x: 1194.0
+    y: 830.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 1490.0
+    y: 669.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass1"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 1594.0
+    y: 669.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass2"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 1552.0
+    y: 669.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass3"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 1623.0
+    y: 669.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass4"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 1685.0
+    y: 667.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass5"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 1788.0
+    y: 667.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass6"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 1922.0
+    y: 667.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass7"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 1922.0
+    y: 667.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass8"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 2534.0
+    y: 654.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass9"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 2558.0
+    y: 654.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass10"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 2605.0
+    y: 654.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass11"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 2629.0
+    y: 654.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass12"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 2674.0
+    y: 652.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass13"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 2698.0
+    y: 652.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass14"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 2687.0
+    y: 652.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass15"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 2711.0
+    y: 652.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass16"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 2734.0
+    y: 652.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass17"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 2758.0
+    y: 652.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass18"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 2734.0
+    y: 652.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass19"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 2758.0
+    y: 652.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass20"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 2795.0
+    y: 648.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass21"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 3124.0
+    y: 679.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass22"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 3148.0
+    y: 679.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass23"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 3124.0
+    y: 679.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass24"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 3142.0
+    y: 679.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass25"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 3118.0
+    y: 679.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass26"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 3234.0
+    y: 664.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "grass27"
+  prototype: "/main/environment/grass.go"
+  position {
+    x: 3210.0
+    y: 664.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
 scale_along_z: 0
 embedded_instances {
   id: "map"
@@ -1382,8 +2903,426 @@ embedded_instances {
   }
 }
 embedded_instances {
+  id: "bubbles holder"
+  children: "bubbles"
+  children: "bubbles1"
+  children: "bubbles2"
+  children: "bubbles3"
+  children: "bubbles4"
+  children: "bubbles5"
+  children: "bubbles6"
+  children: "bubbles7"
+  data: ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "salvage"
+  children: "salvage1"
+  children: "salvage2"
+  children: "salvage3"
+  children: "salvage4"
+  children: "salvage5"
+  data: ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "scripts"
+  data: "components {\n"
+  "  id: \"main\"\n"
+  "  component: \"/main/main.script\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "components {\n"
+  "  id: \"sound_gate\"\n"
+  "  component: \"/main/sound_gate.script\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "jellys"
+  children: "jellyfihas"
+  children: "jellyfihas1"
+  children: "jellyfihas10"
+  children: "jellyfihas11"
+  children: "jellyfihas12"
+  children: "jellyfihas13"
+  children: "jellyfihas14"
+  children: "jellyfihas15"
+  children: "jellyfihas16"
+  children: "jellyfihas17"
+  children: "jellyfihas18"
+  children: "jellyfihas19"
+  children: "jellyfihas2"
+  children: "jellyfihas20"
+  children: "jellyfihas21"
+  children: "jellyfihas22"
+  children: "jellyfihas23"
+  children: "jellyfihas24"
+  children: "jellyfihas25"
+  children: "jellyfihas26"
+  children: "jellyfihas27"
+  children: "jellyfihas28"
+  children: "jellyfihas29"
+  children: "jellyfihas3"
+  children: "jellyfihas30"
+  children: "jellyfihas31"
+  children: "jellyfihas32"
+  children: "jellyfihas33"
+  children: "jellyfihas34"
+  children: "jellyfihas35"
+  children: "jellyfihas36"
+  children: "jellyfihas37"
+  children: "jellyfihas38"
+  children: "jellyfihas39"
+  children: "jellyfihas4"
+  children: "jellyfihas40"
+  children: "jellyfihas41"
+  children: "jellyfihas42"
+  children: "jellyfihas43"
+  children: "jellyfihas44"
+  children: "jellyfihas45"
+  children: "jellyfihas46"
+  children: "jellyfihas47"
+  children: "jellyfihas48"
+  children: "jellyfihas49"
+  children: "jellyfihas5"
+  children: "jellyfihas50"
+  children: "jellyfihas51"
+  children: "jellyfihas52"
+  children: "jellyfihas53"
+  children: "jellyfihas54"
+  children: "jellyfihas55"
+  children: "jellyfihas56"
+  children: "jellyfihas57"
+  children: "jellyfihas58"
+  children: "jellyfihas59"
+  children: "jellyfihas6"
+  children: "jellyfihas60"
+  children: "jellyfihas61"
+  children: "jellyfihas62"
+  children: "jellyfihas63"
+  children: "jellyfihas64"
+  children: "jellyfihas65"
+  children: "jellyfihas66"
+  children: "jellyfihas67"
+  children: "jellyfihas68"
+  children: "jellyfihas69"
+  children: "jellyfihas7"
+  children: "jellyfihas70"
+  children: "jellyfihas8"
+  children: "jellyfihas9"
+  data: ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "bigjelleys"
+  children: "backgrounds"
+  children: "dire_jellyfihas"
+  children: "dire_jellyfihas1"
+  children: "dire_jellyfihas10"
+  children: "dire_jellyfihas12"
+  children: "dire_jellyfihas13"
+  children: "dire_jellyfihas14"
+  children: "dire_jellyfihas15"
+  children: "dire_jellyfihas16"
+  children: "dire_jellyfihas17"
+  children: "dire_jellyfihas18"
+  children: "dire_jellyfihas19"
+  children: "dire_jellyfihas2"
+  children: "dire_jellyfihas3"
+  children: "dire_jellyfihas4"
+  children: "dire_jellyfihas5"
+  children: "dire_jellyfihas6"
+  children: "dire_jellyfihas7"
+  children: "dire_jellyfihas8"
+  children: "dire_jellyfihas9"
+  data: ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "bombs"
+  children: "bomb"
+  data: ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "sounds"
+  data: "embedded_components {\n"
+  "  id: \"typing\"\n"
+  "  type: \"sound\"\n"
+  "  data: \"sound: \\\"/assets/SFX/PC Noises/Typing_Mono.wav\\\"\\n"
+  "looping: 0\\n"
+  "group: \\\"master\\\"\\n"
+  "gain: 1.0\\n"
+  "pan: 0.0\\n"
+  "speed: 1.0\\n"
+  "loopcount: 0\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
   id: "backgrounds"
   data: "embedded_components {\n"
+  "  id: \"01bg\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/level2/backgrounds.atlas\\\"\\n"
+  "default_animation: \\\"02-01-bg\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 1296.0\n"
+  "    y: 605.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"01fg\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/level2/backgrounds.atlas\\\"\\n"
+  "default_animation: \\\"02-01-fg\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 1298.0\n"
+  "    y: 605.0\n"
+  "    z: 2.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"11bg\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/level2/backgrounds.atlas\\\"\\n"
+  "default_animation: \\\"02-11-bg\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 1039.0\n"
+  "    y: -36.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"11fg\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/level2/backgrounds.atlas\\\"\\n"
+  "default_animation: \\\"02-11-fg\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 1039.0\n"
+  "    y: -36.0\n"
+  "    z: 2.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"02bg\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/level2/backgrounds.atlas\\\"\\n"
+  "default_animation: \\\"02-02-bg\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 528.0\n"
+  "    y: 595.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"02fg\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/level2/backgrounds.atlas\\\"\\n"
+  "default_animation: \\\"02-02-fg\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 528.0\n"
+  "    y: 595.0\n"
+  "    z: 2.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
   "  id: \"03bg\"\n"
   "  type: \"sprite\"\n"
   "  data: \"tile_set: \\\"/main/level2/backgrounds.atlas\\\"\\n"
@@ -1395,6 +3334,26 @@ embedded_instances {
   "    x: 784.0\n"
   "    y: 603.0\n"
   "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"03fg\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"tile_set: \\\"/main/level2/backgrounds.atlas\\\"\\n"
+  "default_animation: \\\"02-03-fg\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "blend_mode: BLEND_MODE_ALPHA\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 784.0\n"
+  "    y: 603.0\n"
+  "    z: 2.0\n"
   "  }\n"
   "  rotation {\n"
   "    x: 0.0\n"
@@ -1623,146 +3582,6 @@ embedded_instances {
   "    w: 1.0\n"
   "  }\n"
   "}\n"
-  "embedded_components {\n"
-  "  id: \"11bg\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/main/level2/backgrounds.atlas\\\"\\n"
-  "default_animation: \\\"02-11-bg\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 1039.0\n"
-  "    y: -36.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  "embedded_components {\n"
-  "  id: \"11fg\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/main/level2/backgrounds.atlas\\\"\\n"
-  "default_animation: \\\"02-11-fg\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 1039.0\n"
-  "    y: -36.0\n"
-  "    z: 2.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  "embedded_components {\n"
-  "  id: \"02bg\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/main/level2/backgrounds.atlas\\\"\\n"
-  "default_animation: \\\"02-02-bg\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 528.0\n"
-  "    y: 595.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  "embedded_components {\n"
-  "  id: \"03fg\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/main/level2/backgrounds.atlas\\\"\\n"
-  "default_animation: \\\"02-03-fg\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 784.0\n"
-  "    y: 603.0\n"
-  "    z: 2.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  "embedded_components {\n"
-  "  id: \"02fg\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/main/level2/backgrounds.atlas\\\"\\n"
-  "default_animation: \\\"02-02-fg\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 528.0\n"
-  "    y: 595.0\n"
-  "    z: 2.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  "embedded_components {\n"
-  "  id: \"01bg\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/main/level2/backgrounds.atlas\\\"\\n"
-  "default_animation: \\\"02-01-bg\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 1297.0\n"
-  "    y: 605.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  "embedded_components {\n"
-  "  id: \"01fg\"\n"
-  "  type: \"sprite\"\n"
-  "  data: \"tile_set: \\\"/main/level2/backgrounds.atlas\\\"\\n"
-  "default_animation: \\\"02-01-fg\\\"\\n"
-  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
-  "blend_mode: BLEND_MODE_ALPHA\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 1298.0\n"
-  "    y: 605.0\n"
-  "    z: 2.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
   ""
   position {
     x: 0.0
@@ -1782,238 +3601,36 @@ embedded_instances {
   }
 }
 embedded_instances {
-  id: "bubbles holder"
-  children: "bubbles"
-  children: "bubbles1"
-  children: "bubbles2"
-  children: "bubbles3"
-  children: "bubbles4"
-  children: "bubbles5"
-  children: "bubbles6"
-  children: "bubbles7"
+  id: "grass holder"
+  children: "grass"
+  children: "grass1"
+  children: "grass10"
+  children: "grass11"
+  children: "grass12"
+  children: "grass13"
+  children: "grass14"
+  children: "grass15"
+  children: "grass16"
+  children: "grass17"
+  children: "grass18"
+  children: "grass19"
+  children: "grass2"
+  children: "grass20"
+  children: "grass21"
+  children: "grass22"
+  children: "grass23"
+  children: "grass24"
+  children: "grass25"
+  children: "grass26"
+  children: "grass27"
+  children: "grass3"
+  children: "grass4"
+  children: "grass5"
+  children: "grass6"
+  children: "grass7"
+  children: "grass8"
+  children: "grass9"
   data: ""
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "salvage"
-  children: "salvage1"
-  children: "salvage2"
-  children: "salvage3"
-  children: "salvage4"
-  children: "salvage5"
-  data: ""
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "scripts"
-  data: "components {\n"
-  "  id: \"main\"\n"
-  "  component: \"/main/main.script\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  "components {\n"
-  "  id: \"sound_gate\"\n"
-  "  component: \"/main/sound_gate.script\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  ""
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "jellys"
-  children: "jellyfihas"
-  children: "jellyfihas1"
-  children: "jellyfihas10"
-  children: "jellyfihas11"
-  children: "jellyfihas12"
-  children: "jellyfihas13"
-  children: "jellyfihas14"
-  children: "jellyfihas15"
-  children: "jellyfihas16"
-  children: "jellyfihas17"
-  children: "jellyfihas18"
-  children: "jellyfihas19"
-  children: "jellyfihas2"
-  children: "jellyfihas20"
-  children: "jellyfihas21"
-  children: "jellyfihas22"
-  children: "jellyfihas23"
-  children: "jellyfihas24"
-  children: "jellyfihas25"
-  children: "jellyfihas26"
-  children: "jellyfihas27"
-  children: "jellyfihas28"
-  children: "jellyfihas29"
-  children: "jellyfihas3"
-  children: "jellyfihas30"
-  children: "jellyfihas31"
-  children: "jellyfihas32"
-  children: "jellyfihas33"
-  children: "jellyfihas34"
-  children: "jellyfihas4"
-  children: "jellyfihas5"
-  children: "jellyfihas6"
-  children: "jellyfihas7"
-  children: "jellyfihas8"
-  children: "jellyfihas9"
-  data: ""
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "bigjelleys"
-  children: "dire_jellyfihas"
-  children: "dire_jellyfihas1"
-  children: "dire_jellyfihas2"
-  children: "dire_jellyfihas3"
-  children: "dire_jellyfihas4"
-  children: "dire_jellyfihas5"
-  children: "dire_jellyfihas6"
-  children: "dire_jellyfihas7"
-  data: ""
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "bombs"
-  children: "bomb"
-  data: ""
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "sounds"
-  data: "embedded_components {\n"
-  "  id: \"typing\"\n"
-  "  type: \"sound\"\n"
-  "  data: \"sound: \\\"/assets/SFX/PC Noises/Typing_Mono.wav\\\"\\n"
-  "looping: 0\\n"
-  "group: \\\"master\\\"\\n"
-  "gain: 1.0\\n"
-  "pan: 0.0\\n"
-  "speed: 1.0\\n"
-  "loopcount: 0\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  ""
   position {
     x: 0.0
     y: 0.0

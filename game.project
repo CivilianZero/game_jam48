@@ -41,5 +41,5 @@ max_tile_count = 30000
 max_count = 256
 
 [sound]
-max_component_count = 64
+max_component_count = 128
 

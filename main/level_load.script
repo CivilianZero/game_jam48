@@ -1,7 +1,7 @@
 function init(self)
 	msg.post(".", "acquire_input_focus")
-	self.current_level = 0
-	msg.post(".", "load_level", { level = 2 })
+	self.current_level = 1
+	msg.post(".", "load_level", { level = 1 })
 end
 
 function on_message(self, message_id, message, sender)
@@ -12,6 +12,7 @@ function on_message(self, message_id, message, sender)
 	elseif message_id == hash("next_level") then
 		msg.post("#", "unload_intermission")
 		msg.post("#", "load_level", { level = self.current_level + 1 })
+		msg.post("/sub#sub", "change_level", { level = self.current_level })
 	elseif message_id == hash("intermission") then
 		msg.post("#", "unload_level")
 		local proxy = "#intermission"

@@ -373,7 +373,7 @@ nodes {
   text: "0064\n"
   ""
   font: "early_gameboy"
-  id: "text"
+  id: "depth"
   xanchor: XANCHOR_NONE
   yanchor: YANCHOR_NONE
   pivot: PIVOT_CENTER

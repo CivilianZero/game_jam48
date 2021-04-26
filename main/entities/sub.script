@@ -15,6 +15,7 @@ function init(self)
 	self.torpedo_count = 3
 	self.invul = false
 	self.engine_on = false
+	msg.post("/gui#hud", "initial_depth", { depth = go.get_position().ys })
 end
 
 function final(self)
@@ -60,7 +61,7 @@ function update(self, dt)
 	local new_pos = go.get_position() + movement
 	go.set_position(new_pos)
 
-	msg.post("/gui#hud", "send_depth", { y = new_pos.y })
+	msg.post("/gui#hud", "send_depth", { depth = new_pos.y })
 	
 	if vmath.length_sqr(self.velocity) > 0 and self.engine_on == false then
 		self.engine_on = true

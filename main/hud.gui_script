@@ -24,7 +24,7 @@ function init(self)
 	self.printer = printer.new(self, "printer")
 	printer.add_styles(styles)
 	self.index = 1
-	self.current_depth = 
+	self.current_depth = 0
 	timer.delay(0.5, false, function()
 		next_print(self)
 	end)
@@ -42,6 +42,9 @@ function update(self, dt)
 end
 
 function on_message(self, message_id, message, sender)
+	if message_id == hash("initial_depth") then
+		self.current_depth = message.depth
+	end
 	if message_id == hash("torpedo_fired") then
 		if message.remaining == 2 then
 			local node = gui.get_node("torpedo2")
@@ -73,6 +76,12 @@ function on_message(self, message_id, message, sender)
 		end
 	end
 	if message_id == hash("send_depth") then
-		local depth = message.y
+		local depth = message.depth
+		local text_node = gui.get_node("depth")
+		local text = gui.get_text(text_node)
+		if depth < self.current_depth - 9 then
+			gui.set_text(text_node, "00"..text + 1)
+			self.current_depth = depth
+		end
 	end
 end

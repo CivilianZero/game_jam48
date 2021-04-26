@@ -84,7 +84,7 @@ embedded_components {
   id: "lockon"
   type: "sprite"
   data: "tile_set: \"/main/sprites.atlas\"\n"
-  "default_animation: \"salve2\"\n"
+  "default_animation: \"empty\"\n"
   "material: \"/builtins/materials/sprite.material\"\n"
   "blend_mode: BLEND_MODE_ALPHA\n"
   ""

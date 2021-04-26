@@ -6,10 +6,10 @@ function update(self, dt)
 	local sub_pos = go.get_position("/sub")
 	local pos = go.get_position()
 	local dist = distance(pos, sub_pos)
-
+	
 	if dist < 75 then
-		go.set("#lockon", "image", hash("salve2"))
+		sprite.play_flipbook("#lockon", "salve2")
 	else
-		go.set("#lockon", "image", hash(""))
+		sprite.play_flipbook("#lockon", "empty")
 	end
 end

@@ -2,6 +2,10 @@ images {
   image: "/assets/sprites/salvage1/salve2.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
+images {
+  image: "/assets/sprites/empty.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
 animations {
   id: "submarine"
   images {

@@ -12,7 +12,7 @@ local styles = {
 	can_skip = false,
 	shake_on_write = 0,
 }
-local texts = {"Get that salvage, asshole"}
+local texts = {"{styles}Get that salvage, asshole"}
 
 local function next_print(self)
 	local text = texts[self.index]
@@ -22,7 +22,9 @@ end
 
 function init(self)
 	self.printer = printer.new(self, "printer")
+	printer.add_styles(styles)
 	self.index = 1
+	self.current_depth = 
 	timer.delay(0.5, false, function()
 		next_print(self)
 	end)
@@ -34,9 +36,9 @@ end
 
 function update(self, dt)
 	self.printer:update(dt)
-	if self.printer.is_print then
-		msg.post("/sub", "send_coordinates")
-	end
+	-- if not self.printer.is_print then
+	-- 	
+	-- end
 end
 
 function on_message(self, message_id, message, sender)
@@ -70,11 +72,7 @@ function on_message(self, message_id, message, sender)
 			gui.play_flipbook(node, "UI-minisub3")
 		end
 	end
-	if message_id == hash("send_coordinates") then
-		local node = gui.get_node("printer/prefab")
-		local position = vmath.vector3()
-		position.x = message.x + 20
-		position.y = message.y
-		gui.set_position(node, position)
+	if message_id == hash("send_depth") then
+		local depth = message.y
 	end
 end

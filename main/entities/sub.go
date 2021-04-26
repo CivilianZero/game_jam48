@@ -146,7 +146,7 @@ embedded_components {
 embedded_components {
   id: "damage"
   type: "sound"
-  data: "sound: \"/assets/SFX/Collision/CollisionSubfinal_Mono.wav\"\n"
+  data: "sound: \"/assets/SFX/PC Noises/PC Alert_Mono.wav\"\n"
   "looping: 0\n"
   "group: \"sub\"\n"
   "gain: 1.0\n"

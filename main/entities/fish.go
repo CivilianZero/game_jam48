@@ -124,7 +124,7 @@ embedded_components {
 embedded_components {
   id: "hurt"
   type: "sound"
-  data: "sound: \"/assets/SFX/Enemy Noise/Enemy fish Death1_Mono.wav\"\n"
+  data: "sound: \"/assets/SFX/Enemy Noise/Enemy fish DeathFinal_Mono.wav\"\n"
   "looping: 0\n"
   "group: \"master\"\n"
   "gain: 1.0\n"

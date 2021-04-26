@@ -57,8 +57,10 @@ function update(self, dt)
 	
 	local movement = (v0 + v1) * dt * 0.5
 	
-	local p = go.get_position()
-	go.set_position(p + movement)
+	local new_pos = go.get_position() + movement
+	go.set_position(new_pos)
+
+	msg.post("/gui#hud", "send_depth", { y = new_pos.y })
 	
 	if vmath.length_sqr(self.velocity) > 0 and self.engine_on == false then
 		self.engine_on = true
@@ -103,10 +105,6 @@ function on_message(self, message_id, message, sender)
 	end
 	if message_id == hash("torpedo_exploded") then
 		self.max_torpedo = 1
-	end
-	if message_id == hash("send_coordinates") then
-		local pos = go.get_position()
-		msg.post("/gui#hud", "send_coordinates", { x = pos.x, y = pos.y })
 	end
 end
 

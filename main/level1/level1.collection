@@ -450,7 +450,7 @@ instances {
     }
     properties {
       id: "End_path_ID"
-      value: "3.0"
+      value: "10.0"
       type: PROPERTY_TYPE_NUMBER
     }
     properties {
@@ -470,7 +470,7 @@ instances {
   prototype: "/navGo_pathfinding/directionalNode/NavGO_directionalNodeGO.go"
   position {
     x: 388.0
-    y: 29.0
+    y: 13.0
     z: 0.0
   }
   rotation {
@@ -502,8 +502,8 @@ instances {
   id: "NavGO_directionalNodeGO1"
   prototype: "/navGo_pathfinding/directionalNode/NavGO_directionalNodeGO.go"
   position {
-    x: 221.0
-    y: 38.0
+    x: 315.0
+    y: 17.0
     z: 0.0
   }
   rotation {
@@ -535,8 +535,8 @@ instances {
   id: "NavGO_directionalNodeGO2"
   prototype: "/navGo_pathfinding/directionalNode/NavGO_directionalNodeGO.go"
   position {
-    x: 279.0
-    y: -132.0
+    x: 246.0
+    y: 18.0
     z: 0.0
   }
   rotation {
@@ -554,7 +554,7 @@ instances {
     }
     properties {
       id: "Node_Next"
-      value: "1.0"
+      value: "4.0"
       type: PROPERTY_TYPE_NUMBER
     }
   }
@@ -602,12 +602,12 @@ instances {
     id: "fish"
     properties {
       id: "Start_path_ID"
-      value: "1.0"
+      value: "11.0"
       type: PROPERTY_TYPE_NUMBER
     }
     properties {
       id: "End_path_ID"
-      value: "3.0"
+      value: "19.0"
       type: PROPERTY_TYPE_NUMBER
     }
     properties {
@@ -639,6 +639,534 @@ instances {
   scale3 {
     x: 1.0
     y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "NavGO_directionalNodeGO3"
+  prototype: "/navGo_pathfinding/directionalNode/NavGO_directionalNodeGO.go"
+  position {
+    x: 174.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  component_properties {
+    id: "NavGo_directionalScript"
+    properties {
+      id: "Node_ID"
+      value: "4.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "Node_Next"
+      value: "5.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 1.0
+  }
+}
+instances {
+  id: "NavGO_directionalNodeGO4"
+  prototype: "/navGo_pathfinding/directionalNode/NavGO_directionalNodeGO.go"
+  position {
+    x: 164.0
+    y: -52.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  component_properties {
+    id: "NavGo_directionalScript"
+    properties {
+      id: "Node_ID"
+      value: "5.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "Node_Next"
+      value: "6.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 1.0
+  }
+}
+instances {
+  id: "NavGO_directionalNodeGO5"
+  prototype: "/navGo_pathfinding/directionalNode/NavGO_directionalNodeGO.go"
+  position {
+    x: 200.0
+    y: -109.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  component_properties {
+    id: "NavGo_directionalScript"
+    properties {
+      id: "Node_ID"
+      value: "6.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "Node_Next"
+      value: "7.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 1.0
+  }
+}
+instances {
+  id: "NavGO_directionalNodeGO6"
+  prototype: "/navGo_pathfinding/directionalNode/NavGO_directionalNodeGO.go"
+  position {
+    x: 242.0
+    y: -163.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  component_properties {
+    id: "NavGo_directionalScript"
+    properties {
+      id: "Node_ID"
+      value: "7.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "Node_Next"
+      value: "8.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 1.0
+  }
+}
+instances {
+  id: "NavGO_directionalNodeGO7"
+  prototype: "/navGo_pathfinding/directionalNode/NavGO_directionalNodeGO.go"
+  position {
+    x: 312.0
+    y: -163.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  component_properties {
+    id: "NavGo_directionalScript"
+    properties {
+      id: "Node_ID"
+      value: "8.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "Node_Next"
+      value: "9.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 1.0
+  }
+}
+instances {
+  id: "NavGO_directionalNodeGO8"
+  prototype: "/navGo_pathfinding/directionalNode/NavGO_directionalNodeGO.go"
+  position {
+    x: 373.0
+    y: -127.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  component_properties {
+    id: "NavGo_directionalScript"
+    properties {
+      id: "Node_ID"
+      value: "9.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "Node_Next"
+      value: "10.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 1.0
+  }
+}
+instances {
+  id: "NavGO_directionalNodeGO9"
+  prototype: "/navGo_pathfinding/directionalNode/NavGO_directionalNodeGO.go"
+  position {
+    x: 393.0
+    y: -61.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  component_properties {
+    id: "NavGo_directionalScript"
+    properties {
+      id: "Node_ID"
+      value: "10.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "Node_Next"
+      value: "1.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 1.0
+  }
+}
+instances {
+  id: "NavGO_directionalNodeGO10"
+  prototype: "/navGo_pathfinding/directionalNode/NavGO_directionalNodeGO.go"
+  position {
+    x: 873.0
+    y: 475.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  component_properties {
+    id: "NavGo_directionalScript"
+    properties {
+      id: "Node_ID"
+      value: "11.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "Node_Next"
+      value: "12.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 1.0
+  }
+}
+instances {
+  id: "NavGO_directionalNodeGO11"
+  prototype: "/navGo_pathfinding/directionalNode/NavGO_directionalNodeGO.go"
+  position {
+    x: 788.0
+    y: 486.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  component_properties {
+    id: "NavGo_directionalScript"
+    properties {
+      id: "Node_ID"
+      value: "12.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "Node_Next"
+      value: "13.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 1.0
+  }
+}
+instances {
+  id: "NavGO_directionalNodeGO12"
+  prototype: "/navGo_pathfinding/directionalNode/NavGO_directionalNodeGO.go"
+  position {
+    x: 685.0
+    y: 498.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  component_properties {
+    id: "NavGo_directionalScript"
+    properties {
+      id: "Node_ID"
+      value: "13.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "Node_Next"
+      value: "14.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 1.0
+  }
+}
+instances {
+  id: "NavGO_directionalNodeGO13"
+  prototype: "/navGo_pathfinding/directionalNode/NavGO_directionalNodeGO.go"
+  position {
+    x: 610.0
+    y: 537.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  component_properties {
+    id: "NavGo_directionalScript"
+    properties {
+      id: "Node_ID"
+      value: "14.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "Node_Next"
+      value: "15.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 1.0
+  }
+}
+instances {
+  id: "NavGO_directionalNodeGO14"
+  prototype: "/navGo_pathfinding/directionalNode/NavGO_directionalNodeGO.go"
+  position {
+    x: 623.0
+    y: 613.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  component_properties {
+    id: "NavGo_directionalScript"
+    properties {
+      id: "Node_ID"
+      value: "15.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "Node_Next"
+      value: "16.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 1.0
+  }
+}
+instances {
+  id: "NavGO_directionalNodeGO15"
+  prototype: "/navGo_pathfinding/directionalNode/NavGO_directionalNodeGO.go"
+  position {
+    x: 710.0
+    y: 646.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  component_properties {
+    id: "NavGo_directionalScript"
+    properties {
+      id: "Node_ID"
+      value: "16.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "Node_Next"
+      value: "17.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 1.0
+  }
+}
+instances {
+  id: "NavGO_directionalNodeGO16"
+  prototype: "/navGo_pathfinding/directionalNode/NavGO_directionalNodeGO.go"
+  position {
+    x: 813.0
+    y: 651.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  component_properties {
+    id: "NavGo_directionalScript"
+    properties {
+      id: "Node_ID"
+      value: "17.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "Node_Next"
+      value: "18.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 1.0
+  }
+}
+instances {
+  id: "NavGO_directionalNodeGO17"
+  prototype: "/navGo_pathfinding/directionalNode/NavGO_directionalNodeGO.go"
+  position {
+    x: 919.0
+    y: 623.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  component_properties {
+    id: "NavGo_directionalScript"
+    properties {
+      id: "Node_ID"
+      value: "18.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "Node_Next"
+      value: "19.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 1.0
+  }
+}
+instances {
+  id: "NavGO_directionalNodeGO18"
+  prototype: "/navGo_pathfinding/directionalNode/NavGO_directionalNodeGO.go"
+  position {
+    x: 944.0
+    y: 534.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  component_properties {
+    id: "NavGo_directionalScript"
+    properties {
+      id: "Node_ID"
+      value: "19.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+    properties {
+      id: "Node_Next"
+      value: "1.0"
+      type: PROPERTY_TYPE_NUMBER
+    }
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
     z: 1.0
   }
 }
@@ -736,7 +1264,7 @@ embedded_instances {
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
   "  position {\n"
-  "    x: -1197.0\n"
+  "    x: -1200.0\n"
   "    y: 0.0\n"
   "    z: 0.0\n"
   "  }\n"
@@ -850,6 +1378,13 @@ embedded_instances {
   children: "NavGO_directionalNodeGO"
   children: "NavGO_directionalNodeGO1"
   children: "NavGO_directionalNodeGO2"
+  children: "NavGO_directionalNodeGO3"
+  children: "NavGO_directionalNodeGO4"
+  children: "NavGO_directionalNodeGO5"
+  children: "NavGO_directionalNodeGO6"
+  children: "NavGO_directionalNodeGO7"
+  children: "NavGO_directionalNodeGO8"
+  children: "NavGO_directionalNodeGO9"
   data: ""
   position {
     x: 0.0
@@ -1553,6 +2088,35 @@ embedded_instances {
   position {
     x: 957.0
     y: 273.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "nav nodes1"
+  children: "NavGO_directionalNodeGO10"
+  children: "NavGO_directionalNodeGO11"
+  children: "NavGO_directionalNodeGO12"
+  children: "NavGO_directionalNodeGO13"
+  children: "NavGO_directionalNodeGO14"
+  children: "NavGO_directionalNodeGO15"
+  children: "NavGO_directionalNodeGO16"
+  children: "NavGO_directionalNodeGO17"
+  children: "NavGO_directionalNodeGO18"
+  data: ""
+  position {
+    x: 0.0
+    y: 0.0
     z: 0.0
   }
   rotation {

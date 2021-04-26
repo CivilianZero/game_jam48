@@ -1,4 +1,4 @@
-name: "main"
+name: "level1"
 instances {
   id: "sub"
   prototype: "/main/entities/sub.go"

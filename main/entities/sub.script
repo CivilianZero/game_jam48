@@ -1,9 +1,12 @@
 go.property("speed", 40)
 local camera = require "orthographic.camera"
 
+local salvage = {"/salvage1", "/salvage2", "/salvage3", "/salvage4", "/salvage5", "/salvage6"}
+
 function init(self)
 	msg.post(".", "acquire_input_focus")
 	msg.post(".", "acquire_camera_focus")
+	
 	self.velocity = vmath.vector3()
 	self.input = vmath.vector3()
 	self.max_velocity = 40
@@ -17,6 +20,7 @@ function init(self)
 	self.engine_on = false
 	self.pinged = false
 	self.pinged_cooldown = 0
+	self.salvage_collected = 0
 	msg.post("/gui#hud", "initial_depth", { depth = go.get_position().ys })
 end
 
@@ -32,7 +36,9 @@ function update(self, dt)
 	if self.health <= 0 then
 		print("DEAD")
 	end
-
+	if self.salvage_collected == 5 then
+		msg.post("/loader#level_load", "load_level", { level = 2 })
+	end
 	if self.pinged and self.pinged_cooldown > 0 then
 		self.pinged_cooldown = self.pinged_cooldown - 1
 	end
@@ -99,7 +105,14 @@ function on_message(self, message_id, message, sender)
 			self.torpedo_count = 3
 			sound.play("#pickup")
 			go.delete(message.other_id)
+			salvage[message.other_id] = false
 			msg.post("/gui#hud", "restore")
+			self.salvage_collected = self.salvage_collected + 1
+			for i,v in ipairs(salvage) do
+				if message.other_id == hash(v) then
+					table.remove(salvage, i)
+				end
+			end
 		end
  		if message.distance > 0 then
 			local proj = vmath.project(self.correction, message.normal * message.distance)
@@ -118,7 +131,6 @@ end
 function sonar_ping(self)
 	self.pinged = true
 	self.pinged_cooldown = 260
-	salvage = {"/salvage1", "/salvage2", "/salvage3", "/salvage4", "/salvage5", "/salvage6"}
 	for i, v in ipairs(salvage) do
 		direction = go.get_position(v) - go.get_position()
 		local params = {

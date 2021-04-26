@@ -8,7 +8,7 @@ end
 
 local function explode(self)
 	msg.post("#collisionobject", "disable")
-	msg.post("#sprite", "play_animation", { id = hash("bomb_explosion") })
+	sprite.play_flipbook("#sprite", "bomb_explosion")
 end
 
 

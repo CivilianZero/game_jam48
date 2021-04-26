@@ -617,7 +617,7 @@ animations {
     image: "/assets/sprites/bomb explosion/bomb explosion(height adjusted)36.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
-  playback: PLAYBACK_LOOP_FORWARD
+  playback: PLAYBACK_ONCE_FORWARD
   fps: 13
   flip_horizontal: 0
   flip_vertical: 0

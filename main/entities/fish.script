@@ -30,7 +30,7 @@ local function moveCharacter(self)
 		local lastPos = go.get_position()
 
 		for i=1, #path do
-			if self.pathing == false then
+			if self.pathing == false or self.paralyze == true then
 				return
 			end
 			local newPosition = vmath.vector3(path[i].x, path[i].y, 0)

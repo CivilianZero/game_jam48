@@ -1160,7 +1160,7 @@ instances {
     }
     properties {
       id: "Node_Next"
-      value: "1.0"
+      value: "11.0"
       type: PROPERTY_TYPE_NUMBER
     }
   }

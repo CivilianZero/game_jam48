@@ -3,6 +3,7 @@ go.property("timer", 300)
 
 
 function init(self)
+	self.count = 0
 	-- Add initialization code here
 	-- Learn more: https://defold.com/manuals/script/
 	-- Remove this function if not needed
@@ -18,9 +19,9 @@ function update(self, dt)
 	local direction = self.target - go.get_position("/sub")
 	go.set_position(go.get_position("/sub") + (vmath.normalize(direction) * 15))
 	
-	self.timer = self.timer - 1
+	self.count = self.count + (1 * dt)
 
-	if self.timer < 1 then
+	if self.count > self.timer*dt then
 		go.delete()
 	end
 end

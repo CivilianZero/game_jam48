@@ -146,6 +146,7 @@ function sonar_ping(self)
 end
 
 function on_input(self, action_id, action)
+	sprite.set_hflip("#sprite", self.dir.x < 0)
 	if action_id == hash("up") then
 		self.input.y = 1
 	elseif action_id == hash("down") then

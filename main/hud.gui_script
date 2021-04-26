@@ -3,7 +3,6 @@ local styles = {
 	standard = {
 		scale = .8,
 		sound = "typing",
-		speed = .2
 	}
 }
 local texts = {"{standard}Salvage detected within the cave system.", 

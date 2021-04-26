@@ -110,7 +110,7 @@ embedded_components {
   data: "sound: \"/assets/SFX/Torpedo/Torpedo explosionFixedFinal_Mono.wav\"\n"
   "looping: 0\n"
   "group: \"master\"\n"
-  "gain: 1.0\n"
+  "gain: 2.0\n"
   "pan: 0.0\n"
   "speed: 1.0\n"
   "loopcount: 0\n"

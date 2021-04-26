@@ -4,8 +4,8 @@ instances {
   prototype: "/main/entities/sub.go"
   children: "depth-checker"
   position {
-    x: 294.0
-    y: 94.0
+    x: 140.0
+    y: -213.0
     z: 1.0
   }
   rotation {
@@ -24,8 +24,8 @@ instances {
   id: "camera"
   prototype: "/orthographic/camera.go"
   position {
-    x: 469.0
-    y: 28.0
+    x: 315.0
+    y: -279.0
     z: 0.0
   }
   rotation {
@@ -310,8 +310,8 @@ embedded_instances {
   "}\n"
   ""
   position {
-    x: 0.0
-    y: -351.0
+    x: -154.0
+    y: -658.0
     z: 0.0
   }
   rotation {
@@ -345,8 +345,8 @@ embedded_instances {
   "}\n"
   ""
   position {
-    x: 0.0
-    y: -351.0
+    x: -154.0
+    y: -658.0
     z: 0.0
   }
   rotation {
@@ -395,8 +395,8 @@ embedded_instances {
   "}\n"
   ""
   position {
-    x: 0.0
-    y: -351.0
+    x: -154.0
+    y: -658.0
     z: 0.0
   }
   rotation {
@@ -462,8 +462,8 @@ embedded_instances {
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
   "  position {\n"
-  "    x: 596.0\n"
-  "    y: 546.0\n"
+  "    x: 594.0\n"
+  "    y: 524.0\n"
   "    z: -2.0\n"
   "  }\n"
   "  rotation {\n"
@@ -483,7 +483,7 @@ embedded_instances {
   "\"\n"
   "  position {\n"
   "    x: 594.0\n"
-  "    y: 292.0\n"
+  "    y: 284.0\n"
   "    z: -2.0\n"
   "  }\n"
   "  rotation {\n"
@@ -595,8 +595,8 @@ embedded_instances {
   "}\n"
   ""
   position {
-    x: 0.0
-    y: -351.0
+    x: -154.0
+    y: -658.0
     z: 0.0
   }
   rotation {
@@ -621,8 +621,8 @@ embedded_instances {
   children: "salvage6"
   data: ""
   position {
-    x: 0.0
-    y: -351.0
+    x: -154.0
+    y: -658.0
     z: 0.0
   }
   rotation {
@@ -1481,8 +1481,8 @@ embedded_instances {
   "}\n"
   ""
   position {
-    x: 0.0
-    y: -351.0
+    x: -154.0
+    y: -658.0
     z: -1.0
   }
   rotation {
@@ -1521,8 +1521,8 @@ embedded_instances {
   "}\n"
   ""
   position {
-    x: 0.0
-    y: 0.0
+    x: -154.0
+    y: -307.0
     z: 0.0
   }
   rotation {

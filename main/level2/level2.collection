@@ -3,9 +3,9 @@ instances {
   id: "sub"
   prototype: "/main/entities/sub.go"
   position {
-    x: 181.0
-    y: 349.0
-    z: 0.0
+    x: 319.0
+    y: 744.0
+    z: 1.0
   }
   rotation {
     x: 0.0
@@ -271,8 +271,8 @@ instances {
   id: "salvage1"
   prototype: "/main/entities/salvage.go"
   position {
-    x: 284.0
-    y: 55.0
+    x: 324.0
+    y: 380.0
     z: 0.0
   }
   rotation {
@@ -390,7 +390,6 @@ instances {
 scale_along_z: 0
 embedded_instances {
   id: "map"
-  children: "small bombs"
   data: "components {\n"
   "  id: \"terrain 2\"\n"
   "  component: \"/main/level2/level2.tilemap\"\n"
@@ -437,7 +436,7 @@ embedded_instances {
   position {
     x: 0.0
     y: 0.0
-    z: 0.0
+    z: -1.0
   }
   rotation {
     x: 0.0
@@ -567,7 +566,7 @@ embedded_instances {
   position {
     x: 0.0
     y: 0.0
-    z: 0.0
+    z: -1.0
   }
   rotation {
     x: 0.0
@@ -627,7 +626,7 @@ embedded_instances {
   position {
     x: 0.0
     y: 0.0
-    z: 1.0
+    z: 2.0
   }
   rotation {
     x: 0.0
@@ -696,6 +695,83 @@ embedded_instances {
     x: 266.0
     y: 335.0
     z: 1.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "salvage"
+  children: "relic1"
+  children: "salvage1"
+  children: "salvage2"
+  children: "salvage3"
+  children: "salvage4"
+  children: "salvage5"
+  children: "salvage6"
+  data: ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
+  id: "scripts"
+  data: "components {\n"
+  "  id: \"main\"\n"
+  "  component: \"/main/main.script\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "components {\n"
+  "  id: \"sound_gate\"\n"
+  "  component: \"/main/sound_gate.script\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
   }
   rotation {
     x: 0.0
@@ -1166,83 +1242,6 @@ embedded_instances {
   position {
     x: 1021.0
     y: -77.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "salvage"
-  children: "relic1"
-  children: "salvage1"
-  children: "salvage2"
-  children: "salvage3"
-  children: "salvage4"
-  children: "salvage5"
-  children: "salvage6"
-  data: ""
-  position {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-embedded_instances {
-  id: "scripts"
-  data: "components {\n"
-  "  id: \"main\"\n"
-  "  component: \"/main/main.script\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  "components {\n"
-  "  id: \"sound_gate\"\n"
-  "  component: \"/main/sound_gate.script\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  ""
-  position {
-    x: 0.0
-    y: 0.0
     z: 0.0
   }
   rotation {

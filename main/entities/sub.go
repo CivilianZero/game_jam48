@@ -17,7 +17,7 @@ embedded_components {
   id: "sprite"
   type: "sprite"
   data: "tile_set: \"/main/sprites.atlas\"\n"
-  "default_animation: \"submarine-3\"\n"
+  "default_animation: \"submarine04\"\n"
   "material: \"/builtins/materials/sprite.material\"\n"
   "blend_mode: BLEND_MODE_ALPHA\n"
   ""

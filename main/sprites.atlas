@@ -640,7 +640,7 @@ animations {
 animations {
   id: "submarine04"
   images {
-    image: "/assets/sprites/gunsub.png"
+    image: "/assets/sprites/subwoo.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   playback: PLAYBACK_LOOP_FORWARD

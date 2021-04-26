@@ -6,7 +6,7 @@ local salvage = {"/salvage1", "/salvage2", "/salvage3", "/salvage4", "/salvage5"
 function init(self)
 	msg.post(".", "acquire_input_focus")
 	msg.post(".", "acquire_camera_focus")
-
+	
 	self.current_level = 1
 	self.velocity = vmath.vector3()
 	self.input = vmath.vector3()
@@ -24,6 +24,7 @@ function init(self)
 	self.pinged_cooldown = 0
 	self.salvage_collected = 0
 	msg.post("/gui#hud", "initial_depth", { depth = go.get_position().ys })
+	msg.post("main:/loader#level_load", "get_current_level")
 end
 
 function final(self)

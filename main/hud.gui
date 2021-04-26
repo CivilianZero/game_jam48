@@ -402,8 +402,8 @@ nodes {
 }
 nodes {
   position {
-    x: 940.0
-    y: 270.0
+    x: 886.0
+    y: 318.0
     z: 0.0
     w: 1.0
   }
@@ -528,7 +528,7 @@ nodes {
   }
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
-  text: "X"
+  text: ""
   font: "system_font"
   id: "printer/prefab"
   xanchor: XANCHOR_NONE
@@ -554,6 +554,7 @@ nodes {
   alpha: 1.0
   outline_alpha: 1.0
   shadow_alpha: 1.0
+  overridden_fields: 8
   template_node_child: true
   text_leading: 1.0
   text_tracking: 0.0

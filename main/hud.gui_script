@@ -1,6 +1,6 @@
 local printer = require "printer.printer"
 local styles = {
-	font_height = 28,
+	font_height = 32,
 	spacing = 1,
 	scale = 1,
 	waving = false,
@@ -34,9 +34,6 @@ end
 
 function update(self, dt)
 	self.printer:update(dt)
-	if self.printer.is_print then
-		msg.post("/sub", "send_coordinates")
-	end
 end
 
 function on_message(self, message_id, message, sender)
@@ -69,12 +66,5 @@ function on_message(self, message_id, message, sender)
 		elseif message.remaining == 1 then
 			gui.play_flipbook(node, "UI-minisub3")
 		end
-	end
-	if message_id == hash("send_coordinates") then
-		local node = gui.get_node("printer/prefab")
-		local position = vmath.vector3()
-		position.x = message.x + 20
-		position.y = message.y
-		gui.set_position(node, position)
 	end
 end

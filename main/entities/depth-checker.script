@@ -1,7 +1,7 @@
 function update(self, dt)
-	depth = go.get_position("/sub").y
+	depth = go.get_position("/sub").ys
 	opacity = (1400 - depth) / 900
 	true_opacity = math.max(opacity, .2)
 	
-	go.set("#sprite", "tint.w", opacity)
+	go.set("#sprite", "tint.w", 1)
 end

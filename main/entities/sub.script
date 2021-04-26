@@ -134,6 +134,7 @@ function on_message(self, message_id, message, sender)
 end
 
 function sonar_ping(self)
+	self.sonar_available = false
 	sound.play("#sonar")
 	self.pinged = true
 	self.pinged_cooldown = 0

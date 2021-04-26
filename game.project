@@ -38,7 +38,7 @@ width = 1280
 max_tile_count = 30000
 
 [sprite]
-max_count = 256
+max_count = 512
 
 [sound]
 max_component_count = 128

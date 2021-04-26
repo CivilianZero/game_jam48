@@ -19,7 +19,7 @@ local salvage_level_2 = {"Blood. Blood in the water...",
 "Crystalline formations. Formed over Skeletons.",
 "Fossils of Unknown Specimens. Science Vessel."}
 local salvage_level_3 = {"The Holy.",
-"The Vessel: Empty. Or The Vessel. Empty."
+"The Vessel: Empty. Or The Vessel. Empty.",
 "A Void of Effervescence",
 "A Seal on a Hole in the World",
 "Tissue formed from Steel",

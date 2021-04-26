@@ -4,8 +4,8 @@ instances {
   prototype: "/main/entities/sub.go"
   children: "depth-checker"
   position {
-    x: -116.0
-    y: 822.0
+    x: 481.0
+    y: 266.0
     z: 0.0
   }
   rotation {
@@ -252,7 +252,7 @@ instances {
   id: "fish"
   prototype: "/main/entities/fish.go"
   position {
-    x: 382.0
+    x: 187.0
     y: 20.0
     z: 0.0
   }
@@ -1651,6 +1651,166 @@ instances {
     z: 1.0
   }
 }
+instances {
+  id: "bomb11"
+  prototype: "/main/entities/bomb.go"
+  position {
+    x: 700.0
+    y: 354.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bomb12"
+  prototype: "/main/entities/bomb.go"
+  position {
+    x: 657.0
+    y: 336.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bomb13"
+  prototype: "/main/entities/bomb.go"
+  position {
+    x: 864.0
+    y: 256.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bomb14"
+  prototype: "/main/entities/bomb.go"
+  position {
+    x: 791.0
+    y: 370.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bomb15"
+  prototype: "/main/entities/bomb.go"
+  position {
+    x: 1008.0
+    y: 463.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bomb16"
+  prototype: "/main/entities/bomb.go"
+  position {
+    x: 1008.0
+    y: 463.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bomb17"
+  prototype: "/main/entities/bomb.go"
+  position {
+    x: 678.0
+    y: 380.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bomb18"
+  prototype: "/main/entities/bomb.go"
+  position {
+    x: 678.0
+    y: 380.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
 scale_along_z: 0
 embedded_instances {
   id: "map"
@@ -1745,8 +1905,8 @@ embedded_instances {
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
   "  position {\n"
-  "    x: -1200.0\n"
-  "    y: 0.0\n"
+  "    x: -935.0\n"
+  "    y: 151.0\n"
   "    z: 0.0\n"
   "  }\n"
   "  rotation {\n"
@@ -2081,6 +2241,14 @@ embedded_instances {
   children: "bomb"
   children: "bomb1"
   children: "bomb10"
+  children: "bomb11"
+  children: "bomb12"
+  children: "bomb13"
+  children: "bomb14"
+  children: "bomb15"
+  children: "bomb16"
+  children: "bomb17"
+  children: "bomb18"
   children: "bomb2"
   children: "bomb3"
   children: "bomb4"

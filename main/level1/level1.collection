@@ -4,8 +4,8 @@ instances {
   prototype: "/main/entities/sub.go"
   children: "depth-checker"
   position {
-    x: 481.0
-    y: 266.0
+    x: -124.0
+    y: 818.0
     z: 0.0
   }
   rotation {
@@ -112,8 +112,8 @@ instances {
   id: "bubbles1"
   prototype: "/main/environment/bubbles.go"
   position {
-    x: 611.0
-    y: 504.0
+    x: 592.0
+    y: 448.0
     z: 0.0
   }
   rotation {
@@ -1272,6 +1272,366 @@ instances {
   }
 }
 instances {
+  id: "salvage5"
+  prototype: "/main/entities/salvage.go"
+  position {
+    x: 106.0
+    y: 4.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "salvage6"
+  prototype: "/main/entities/salvage.go"
+  position {
+    x: 1046.0
+    y: -572.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "depth-checker"
+  prototype: "/main/entities/depth-checker.go"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bomb11"
+  prototype: "/main/entities/bomb.go"
+  position {
+    x: 700.0
+    y: 354.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bomb12"
+  prototype: "/main/entities/bomb.go"
+  position {
+    x: 657.0
+    y: 336.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bomb13"
+  prototype: "/main/entities/bomb.go"
+  position {
+    x: 864.0
+    y: 256.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bomb14"
+  prototype: "/main/entities/bomb.go"
+  position {
+    x: 791.0
+    y: 370.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bomb15"
+  prototype: "/main/entities/bomb.go"
+  position {
+    x: 1008.0
+    y: 463.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bomb16"
+  prototype: "/main/entities/bomb.go"
+  position {
+    x: 1008.0
+    y: 463.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bomb17"
+  prototype: "/main/entities/bomb.go"
+  position {
+    x: 678.0
+    y: 380.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bomb18"
+  prototype: "/main/entities/bomb.go"
+  position {
+    x: 678.0
+    y: 380.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bubbles8"
+  prototype: "/main/environment/bubbles.go"
+  position {
+    x: 746.0
+    y: 608.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bubbles9"
+  prototype: "/main/environment/bubbles.go"
+  position {
+    x: 639.0
+    y: 192.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bubbles10"
+  prototype: "/main/environment/bubbles.go"
+  position {
+    x: 639.0
+    y: 192.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bubbles11"
+  prototype: "/main/environment/bubbles.go"
+  position {
+    x: 639.0
+    y: 118.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bubbles13"
+  prototype: "/main/environment/bubbles.go"
+  position {
+    x: 599.0
+    y: 132.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bubbles14"
+  prototype: "/main/environment/bubbles.go"
+  position {
+    x: 455.0
+    y: 37.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
+  id: "bubbles12"
+  prototype: "/main/environment/bubbles.go"
+  position {
+    x: 340.0
+    y: -27.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+instances {
   id: "grass"
   prototype: "/main/environment/grass.go"
   position {
@@ -1592,11 +1952,11 @@ instances {
   }
 }
 instances {
-  id: "salvage5"
-  prototype: "/main/entities/salvage.go"
+  id: "grass15"
+  prototype: "/main/environment/grass.go"
   position {
-    x: 106.0
-    y: 4.0
+    x: 494.0
+    y: 33.0
     z: 0.0
   }
   rotation {
@@ -1612,11 +1972,11 @@ instances {
   }
 }
 instances {
-  id: "salvage6"
-  prototype: "/main/entities/salvage.go"
+  id: "grass16"
+  prototype: "/main/environment/grass.go"
   position {
-    x: 1046.0
-    y: -572.0
+    x: -72.0
+    y: 805.0
     z: 0.0
   }
   rotation {
@@ -1632,11 +1992,11 @@ instances {
   }
 }
 instances {
-  id: "depth-checker"
-  prototype: "/main/entities/depth-checker.go"
+  id: "grass17"
+  prototype: "/main/environment/grass.go"
   position {
-    x: 0.0
-    y: 0.0
+    x: -39.0
+    y: 806.0
     z: 0.0
   }
   rotation {
@@ -1652,11 +2012,11 @@ instances {
   }
 }
 instances {
-  id: "bomb11"
-  prototype: "/main/entities/bomb.go"
+  id: "grass18"
+  prototype: "/main/environment/grass.go"
   position {
-    x: 700.0
-    y: 354.0
+    x: 37.0
+    y: 710.0
     z: 0.0
   }
   rotation {
@@ -1672,11 +2032,11 @@ instances {
   }
 }
 instances {
-  id: "bomb12"
-  prototype: "/main/entities/bomb.go"
+  id: "grass19"
+  prototype: "/main/environment/grass.go"
   position {
-    x: 657.0
-    y: 336.0
+    x: 72.0
+    y: 709.0
     z: 0.0
   }
   rotation {
@@ -1692,11 +2052,11 @@ instances {
   }
 }
 instances {
-  id: "bomb13"
-  prototype: "/main/entities/bomb.go"
+  id: "grass20"
+  prototype: "/main/environment/grass.go"
   position {
-    x: 864.0
-    y: 256.0
+    x: 198.0
+    y: 709.0
     z: 0.0
   }
   rotation {
@@ -1712,11 +2072,11 @@ instances {
   }
 }
 instances {
-  id: "bomb14"
-  prototype: "/main/entities/bomb.go"
+  id: "bubbles15"
+  prototype: "/main/environment/bubbles.go"
   position {
-    x: 791.0
-    y: 370.0
+    x: 105.0
+    y: 710.0
     z: 0.0
   }
   rotation {
@@ -1732,11 +2092,11 @@ instances {
   }
 }
 instances {
-  id: "bomb15"
-  prototype: "/main/entities/bomb.go"
+  id: "bubbles16"
+  prototype: "/main/environment/bubbles.go"
   position {
-    x: 1008.0
-    y: 463.0
+    x: 227.0
+    y: 533.0
     z: 0.0
   }
   rotation {
@@ -1752,51 +2112,11 @@ instances {
   }
 }
 instances {
-  id: "bomb16"
-  prototype: "/main/entities/bomb.go"
+  id: "bubbles17"
+  prototype: "/main/environment/bubbles.go"
   position {
-    x: 1008.0
-    y: 463.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "bomb17"
-  prototype: "/main/entities/bomb.go"
-  position {
-    x: 678.0
-    y: 380.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
-instances {
-  id: "bomb18"
-  prototype: "/main/entities/bomb.go"
-  position {
-    x: 678.0
-    y: 380.0
+    x: -101.0
+    y: 806.0
     z: 0.0
   }
   rotation {
@@ -1812,68 +2132,6 @@ instances {
   }
 }
 scale_along_z: 0
-embedded_instances {
-  id: "map"
-  data: "components {\n"
-  "  id: \"terrain 1\"\n"
-  "  component: \"/main/level1/level1.tilemap\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  "embedded_components {\n"
-  "  id: \"collisionobject\"\n"
-  "  type: \"collisionobject\"\n"
-  "  data: \"collision_shape: \\\"/main/level1/level1.tilemap\\\"\\n"
-  "type: COLLISION_OBJECT_TYPE_STATIC\\n"
-  "mass: 0.0\\n"
-  "friction: 0.1\\n"
-  "restitution: 0.5\\n"
-  "group: \\\"\\\"\\n"
-  "mask: \\\"sub\\\"\\n"
-  "mask: \\\"torpedo\\\"\\n"
-  "linear_damping: 0.0\\n"
-  "angular_damping: 0.0\\n"
-  "locked_rotation: true\\n"
-  "\"\n"
-  "  position {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "  }\n"
-  "  rotation {\n"
-  "    x: 0.0\n"
-  "    y: 0.0\n"
-  "    z: 0.0\n"
-  "    w: 1.0\n"
-  "  }\n"
-  "}\n"
-  ""
-  position {
-    x: 590.0
-    y: 435.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 1.0
-    y: 1.0
-    z: 1.0
-  }
-}
 embedded_instances {
   id: "background-image"
   data: "embedded_components {\n"
@@ -1958,12 +2216,22 @@ embedded_instances {
   id: "bubbles holder"
   children: "bubbles"
   children: "bubbles1"
+  children: "bubbles10"
+  children: "bubbles11"
+  children: "bubbles12"
+  children: "bubbles13"
+  children: "bubbles14"
+  children: "bubbles15"
+  children: "bubbles16"
+  children: "bubbles17"
   children: "bubbles2"
   children: "bubbles3"
   children: "bubbles4"
   children: "bubbles5"
   children: "bubbles6"
   children: "bubbles7"
+  children: "bubbles8"
+  children: "bubbles9"
   data: ""
   position {
     x: 0.0
@@ -2017,6 +2285,7 @@ embedded_instances {
   children: "NavGO_directionalNodeGO7"
   children: "NavGO_directionalNodeGO8"
   children: "NavGO_directionalNodeGO9"
+  children: "map"
   data: ""
   position {
     x: 0.0
@@ -2148,7 +2417,6 @@ embedded_instances {
 }
 embedded_instances {
   id: "bones"
-  children: "grass holder"
   data: "embedded_components {\n"
   "  id: \"fb\"\n"
   "  type: \"sprite\"\n"
@@ -2276,6 +2544,68 @@ embedded_instances {
   }
 }
 embedded_instances {
+  id: "map"
+  data: "components {\n"
+  "  id: \"terrain 1\"\n"
+  "  component: \"/main/level1/level1.tilemap\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"collisionobject\"\n"
+  "  type: \"collisionobject\"\n"
+  "  data: \"collision_shape: \\\"/main/level1/level1.tilemap\\\"\\n"
+  "type: COLLISION_OBJECT_TYPE_STATIC\\n"
+  "mass: 0.0\\n"
+  "friction: 0.1\\n"
+  "restitution: 0.5\\n"
+  "group: \\\"\\\"\\n"
+  "mask: \\\"sub\\\"\\n"
+  "mask: \\\"torpedo\\\"\\n"
+  "linear_damping: 0.0\\n"
+  "angular_damping: 0.0\\n"
+  "locked_rotation: true\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "  }\n"
+  "  rotation {\n"
+  "    x: 0.0\n"
+  "    y: 0.0\n"
+  "    z: 0.0\n"
+  "    w: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 590.0
+    y: 435.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.0
+    y: 1.0
+    z: 1.0
+  }
+}
+embedded_instances {
   id: "grass holder"
   children: "grass"
   children: "grass1"
@@ -2284,7 +2614,13 @@ embedded_instances {
   children: "grass12"
   children: "grass13"
   children: "grass14"
+  children: "grass15"
+  children: "grass16"
+  children: "grass17"
+  children: "grass18"
+  children: "grass19"
   children: "grass2"
+  children: "grass20"
   children: "grass3"
   children: "grass4"
   children: "grass5"
